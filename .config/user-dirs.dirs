@@ -1,0 +1,13 @@
+# Se você quiser mudar ou adicionar diretórios, basta editar a linha que você está
+# interessado. Todas as alterações locais serão mantidas na próxima execução
+# O formato é XDG_xxx_DIR="$HOME/yyy", onde yyy é um caminho relativo ao diretório de usuário escapado para shell,
+# ou XDG_xxx_DIR="/yyy", onde /yyy é um caminho absoluto. Nenhum outro formato é suportado
+#
+XDG_DESKTOP_DIR="$HOME/Área de trabalho"
+XDG_DOWNLOAD_DIR="$HOME/Downloads"
+XDG_TEMPLATES_DIR="$HOME/Modelos"
+XDG_PUBLICSHARE_DIR="$HOME/Público"
+XDG_DOCUMENTS_DIR="$HOME/Documentos"
+XDG_MUSIC_DIR="$HOME/Músicas"
+XDG_PICTURES_DIR="$HOME/Imagens"
+XDG_VIDEOS_DIR="$HOME/Vídeos"

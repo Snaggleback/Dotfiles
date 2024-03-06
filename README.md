@@ -23,7 +23,7 @@ Este repositório contém minhas configurações pessoais para o gerenciador de 
 ![Minha área de trabalho minimalista](./images/screenshots/captura-de-tela-06-03-24-14-34-55.png)
 ![Minha área de trabalho minimalista](./images/screenshots/captura-de-tela-06-03-24-14-36-04.png)
 
-## Sofware que utilizados
+## Sofware utilizados
 
 Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim. Eu tenho algumas fontes extras que não utilizo, mas caso eu quero mudar de fonte, já tem a opção, aqui as fontes que utilizo no meu sistema:
 
@@ -55,6 +55,7 @@ Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir 
   - `Brightnessctl`: Uma ferramenta para controlar o brilho da tela em sistemas que suportam o controle de brilho
 - **Controle de Áudio:**
   - `Pactl`: Uma interface de linha de comando para controlar o PulseAudio, o sistema de som padrão do Linux. Ele já veio padrão, não precisei instalar
+  - `Playerctl`: Um utilitário para controlar players de música via linha de comando
 - **Modo Noturno:**
   - `Redshift`: Um aplicativo que ajusta a temperatura da cor da tela de acordo com a hora do dia para reduzir a fadiga ocular
 - **Conectividade Bluetooth:**
@@ -66,10 +67,12 @@ Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir 
 - **Personalização do Ambiente:**
   - `Lxappearance`: Uma ferramenta para personalizar o tema GTK e o ícone do cursor do mouse
   - `Lightdm-gtk-greeter-settings`: Um utilitário de configuração para o LightDM, um gerenciador de exibição
-- **Bordas Arredondadas, etc.:**
+- **Bordas Arredondadas, Blur, etc.:**
   - `Picom`: Um compositor leve que fornece transparência, sombras e outras efeitos visuais para gerenciadores de janelas
 - **Terminal:**
   - `Kitty`: Um emulador de terminal altamente configurável e performático
+- **Notificações:**
+  - `Dunst`: Um leve e personalizável daemon de notificações para sistemas X11
 - **AUR:**
   - `Yay`: Um gerenciador de pacotes AUR (Arch User Repository) para facilitar a instalação de software não oficial no Arch Linux
 - **Navegador Web:**
