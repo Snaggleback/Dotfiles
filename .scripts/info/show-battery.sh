@@ -20,7 +20,7 @@ battery_level=$(acpi -b | awk '{print $4}' | tr -d '%,')
 # Carregando ou descarregando
 battery_status=$(acpi -b | awk '{print $3}' | tr -d ',')
 
-if [ "${battery_level}" -ge 98 ]; then
+if [ "${battery_level}" -ge 98 ] || [ "${battery_status}" == "Not" ]; then
     notify-send -a "Informações sobre a bateria" -r 6666 -i "${icon_battery_full}" "Sua bateria está completamente carregada!"
     exit 0
 fi

@@ -21,7 +21,7 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,s
 # Open navigator
 bindsym $mod+n exec --no-startup-id google-chrome-stable
 # Open file explorer
-bindsym $mod+e exec --no-startup-id thunar       
+bindsym $mod+e exec --no-startup-id kitty ranger       
 
 # Disable screen saver
 exec_always --no-startup-id xset s off -dpms
