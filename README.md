@@ -1029,20 +1029,18 @@ Para personalizar minha nova aba, utilizo a extensão NightTab com a seguinte pe
 
 Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim. Eu tenho algumas fontes extras que não utilizo, mas caso eu quero mudar de fonte, já tem a opção, aqui as fontes que utilizo no meu sistema:
 
-```text
-pacman -S ttf-anonymouspro-nerd ttf-dejavu-nerd ttf-droid ttf-firacode-nerd ttf-go-nerd 
-ttf-hack-nerd ttf-jetbrains-mono-nerd ttf-liberation-mono-nerd ttf-nerd-fonts-symbols 
-ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-noto-nerd ttf-roboto-mono-nerd 
-ttf-sourcecodepro-nerd ttf-space-mono-nerd ttf-terminus-nerd ttf-ubuntu-mono-nerd ttf-ubuntu-nerd 
-ttf-victor-mono-nerd otf-droid-nerd otf-firamono-nerd otf-monaspace-nerd noto-fonts noto-fonts-cjk 
-noto-fonts-emoji noto-fonts-extra
-```
+<details> <summary>Fontes que utilizo no meu sistema</summary>
+
+    ```text
+    pacman -S ttf-anonymouspro-nerd ttf-dejavu-nerd ttf-droid ttf-firacode-nerd ttf-go-nerd ttf-hack-nerd ttf-jetbrains-mono-nerd ttf-liberation-mono-nerd ttf-nerd-fonts-symbols
+    ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-noto-nerd ttf-roboto-mono-nerd ttf-sourcecodepro-nerd ttf-space-mono-nerd ttf-terminus-nerd ttf-ubuntu-mono-nerd ttf-ubuntu-nerd ttf-victor-mono-nerd otf-droid-nerd otf-firamono-nerd otf-monaspace-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+    ```
+
+</details>
 
 Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir em uma lista, se eu esquecer de alguma coisa é só avisar!
 
-<details>
-
-<summary>Listagem de programas utilizados</summary>
+<details> <summary>Listagem de programas utilizados</summary>
   
   -   **Edição de Imagens:**
       -   `GIMP`: Um poderoso editor de imagens de código aberto com uma ampla gama de recursos
