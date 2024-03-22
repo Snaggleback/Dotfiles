@@ -34,10 +34,13 @@ phrases=(
     "Quando nosso propósito se torna evitação, nossa vida se torna um vazio"                                                              # Bill Crawford
     "A razão pela qual lutamos contra a insegurança é porque comparamos nossos bastidores, com a montanha de destaque de todos os outros" # Steven Furtick
     "Sua perspectiva de vida vem da gaiola em que você foi mantido em cativeiro"                                                          # Shannon L. Alder
+    "Liberdade é pouco. O que desejo ainda não tem nome"                                                                                  # Clarice Lispector
+    "Eu não sou tão triste assim, é que hoje eu estou cansada"                                                                            # Clarice Lispector
+    "Com perdão da palavra, sou um mistério para mim"                                                                                     # Clarice Lispector
 
 )
 
 # Gera um número aleatório de acordo com o tamanho do array
-random_index=$((RANDOM % "${#phrases[@]}"))
+random_index=$((RANDOM % "${#phrases[@]}" + 1))
 
 echo "${phrases[$random_index]}"
