@@ -18,6 +18,9 @@ exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh verify"
 # Launch the GNOME Keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
+# Authentication agent
+exec --no-startup-id /usr/bin/lxpolkit
+
 # Open navigator
 bindsym $mod+n exec --no-startup-id google-chrome-stable
 # Open file explorer

@@ -13,7 +13,7 @@ alias grep='grep --color=auto'
 # Comando melhorado de limpar a tela
 alias clear='printf "\E[H\E[3J" && clear'
 
-# Atalhas para o gerenciador de pacotes:
+# Atalhos para o gerenciador de pacotes:
 alias remove='sudo pacman -Rns'  # Remove um programa
 alias install='sudo pacman -Sy'  # Instala um programa
 alias search='pacman -Ss'        # Pesquisa por um programa
@@ -21,5 +21,7 @@ alias depend='pacman -Qi'        # Verifica as dependencias de um programa
 alias installed='pacman -Qe'     # Lista os pacotes instalados
 alias update='sudo pacman -Syyu' # Sincroniza e procura por atualizações
 alias orphans='pacman -Qdtq'     # Lista os pacotes orfãos
+
+alias compose='docker-compose' # Atalho para docker-compose
 
 PS1='[\u@\h \W]\$ '

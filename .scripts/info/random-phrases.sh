@@ -37,6 +37,8 @@ phrases=(
     "Liberdade é pouco. O que desejo ainda não tem nome"                                                                                  # Clarice Lispector
     "Eu não sou tão triste assim, é que hoje eu estou cansada"                                                                            # Clarice Lispector
     "Com perdão da palavra, sou um mistério para mim"                                                                                     # Clarice Lispector
+    "Tive vergonha de mim próprio, quando percebi que a vida é uma festa de máscaras, e participei com meu verdadeiro rosto"              # Franz Kafka
+    "Deus está morto e os homens perdidos"                                                                                                # Nietzchr1
 
 )
 
