@@ -38,13 +38,13 @@ favorites=(
     "Terminal"
     "${DEFAULT_TERM}"
     
-    "Abrir o YouTube"
+    "YouTube"
     "${DEFAULT_BROWSER} https://www.youtube.com/"
 
-    "Abrir a Netflix" 
+    "Netflix" 
     "${DEFAULT_BROWSER} https://www.netflix.com/browse/"
 
-    "Abrir ChatGPT"
+    "ChatGPT"
     "${DEFAULT_BROWSER} https://chat.openai.com/"
 )
 

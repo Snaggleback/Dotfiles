@@ -10,8 +10,8 @@ files=(
     "rofi - $HOME/.config/rofi"
     "picom - $HOME/.config/picom/picom.conf"
     "ranger - $HOME/.config/ranger/rc.conf"
-    "bash - $HOME/.bashrc"
     "dusnt - $HOME/.config/dunst/dunstrc"
+    "bash - $HOME/.bashrc"
 )
 
 # choice receberá a escolha que o usuário clicou ou apertou sobre o enter

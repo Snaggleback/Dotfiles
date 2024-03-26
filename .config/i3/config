@@ -24,7 +24,9 @@ exec --no-startup-id /usr/bin/lxpolkit
 # Open navigator
 bindsym $mod+n exec --no-startup-id google-chrome-stable
 # Open file explorer
-bindsym $mod+e exec --no-startup-id kitty ranger       
+bindsym $mod+e exec --no-startup-id kitty ranger
+# Open telegram
+bindsym $mod+t exec --no-startup-id telegram-desktop
 
 # Disable screen saver
 exec_always --no-startup-id xset s off -dpms
