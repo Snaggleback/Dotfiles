@@ -11,6 +11,7 @@ files=(
     "picom - $HOME/.config/picom/picom.conf"
     "ranger - $HOME/.config/ranger/rc.conf"
     "dusnt - $HOME/.config/dunst/dunstrc"
+    "neofetch - $HOME/.config/neofetch/config.conf"
     "bash - $HOME/.bashrc"
 )
 
