@@ -1,6 +1,7 @@
 #!/bin/bash
 
 status="$HOME/.status"
+mkdir -p "${status}"
 state_file="${status}/nightmode"
 
 turn_on() {
