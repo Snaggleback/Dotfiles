@@ -45,8 +45,9 @@ favorites=(
     "${BROWSER} https://github.com/Snaggleback/"
 
     "Atualizar arquivos de configuração"
-    "kitty -e $HOME/Documentos/Projetos (GitHub)/Dotfiles/update"
+    "kitty -e \"$HOME/Documentos/Projetos (GitHub)/Dotfiles/update\""
 )
+
 
 # Array onde vão ficar os nomes que vão ser exibidos
 favorites_name=()
