@@ -18,34 +18,34 @@ search_favorites() {
     done
 }
 
-DEFAULT_BROWSER="google-chrome-stable --new-tab"
-DEFAULT_EDITOR="code"
-DEFAULT_TERM="kitty"
-DEFAULT_FILEMAN="kitty -e ranger"
+BROWSER="google-chrome-stable --new-tab"
+EDITOR="code"
+# TERM="kitty"
+# FILEMAN="kitty -e ranger"
 
 favorites=(
     # Nome à ser exibido
-    "Navegador de internet"
+    "Google Chrome"
     # Comando à ser executado quando escolhido
-    "${DEFAULT_BROWSER}"
-
-    "Gerenciador de arquivos" 
-    "${DEFAULT_FILEMAN}"
+    "${BROWSER}"
 
     "Editor de código"
-    "${DEFAULT_EDITOR}"
-
-    "Terminal"
-    "${DEFAULT_TERM}"
+    "${EDITOR}"
     
     "YouTube"
-    "${DEFAULT_BROWSER} https://www.youtube.com/"
+    "${BROWSER} https://www.youtube.com/"
 
     "Netflix" 
-    "${DEFAULT_BROWSER} https://www.netflix.com/browse/"
+    "${BROWSER} https://www.netflix.com/browse/"
 
     "ChatGPT"
-    "${DEFAULT_BROWSER} https://chat.openai.com/"
+    "${BROWSER} https://chat.openai.com/"
+
+    "GitHub (@Snaggleback)"
+    "${BROWSER} https://github.com/Snaggleback/"
+
+    "Atualizar arquivos de configuração"
+    "kitty -e $HOME/Documentos/Projetos (GitHub)/Dotfiles/update"
 )
 
 # Array onde vão ficar os nomes que vão ser exibidos
