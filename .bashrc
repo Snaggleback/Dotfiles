@@ -13,6 +13,7 @@ alias grep='grep --color=auto'
 # Comando melhorado de limpar a tela
 alias clear='printf "\E[H\E[3J" && clear'
 
+
 # Atalhos para o gerenciador de pacotes:
 alias remove='sudo pacman -Rns'  # Remove um programa
 alias install='sudo pacman -Sy'  # Instala um programa
