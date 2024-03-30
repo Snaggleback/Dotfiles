@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 # Executando o script de frases aleatórias
-cowsay $("$HOME/.scripts/info/random-phrases.sh")
+cowsay "$("$HOME/.scripts/info/random-phrases.sh")"
 
 # Colore a saída do comando
 alias ls='ls --color=auto'
@@ -23,5 +23,7 @@ alias update='sudo pacman -Syyu' # Sincroniza e procura por atualizações
 alias orphans='pacman -Qdtq'     # Lista os pacotes orfãos
 
 alias compose='docker-compose' # Atalho para docker-compose
+
+alias neofetch='neofetch --ascii "$(cowsay -W 20 $("$HOME/.scripts/info/random-phrases.sh"))"'
 
 PS1='[\u@\h \W]\$ '
