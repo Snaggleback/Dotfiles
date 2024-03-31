@@ -1,0 +1,45 @@
+{
+    "workbench.colorTheme": "Min Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "breadcrumbs.enabled": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "extensions.ignoreRecommendations": true,
+    "editor.renderControlCharacters": false,
+    "explorer.compactFolders": false,
+    "telemetry.telemetryLevel": "off",
+    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.editor.labelFormat": "short",
+    "workbench.activityBar.location": "hidden",
+    "window.menuBarVisibility": "hidden",
+    "shellcheck.ignorePatterns": {
+        "/home/italo/.config/i3/config": true
+    },
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "explorer.fileNesting.enabled": true,
+    "apc.stylesheet": {
+        ".monaco-list-row": "border-radius: 8px;",
+        ".pane-body": "padding: 8px;",
+        ".monaco-workbench .part.sidebar .title-actions .actions-container": "display: none;"
+    },
+    "window.restoreWindows": "none",
+    "workbench.startupEditor": "none",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "window.customTitleBarVisibility": "auto",
+    "window.commandCenter": false,
+    "explorer.confirmDragAndDrop": false,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "markdown.extension.italic.indicator": "_",
+}
