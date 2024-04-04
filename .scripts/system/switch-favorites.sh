@@ -80,6 +80,9 @@ favorites=(
     "Notion"
     "${BROWSER} https://www.notion.so/"
 
+    "Instagram"
+    "${BROWSER} https://www.instagram.com/"
+
     "Connectar Cursos"
     "${BROWSER} https://www.connectareducacional.com.br/metodo/index.php"
 
