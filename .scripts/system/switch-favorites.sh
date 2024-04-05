@@ -86,6 +86,9 @@ favorites=(
     "Connectar Cursos"
     "${BROWSER} https://www.connectareducacional.com.br/metodo/index.php"
 
+    "Chess.com (Xadrez online)"
+    "${BROWSER} https://www.chess.com/home"
+
     "Dotfiles (Atualizar repositório)"
     "kitty -e \"$HOME/Documentos/Projetos (GitHub)/Dotfiles/update\""
 )
