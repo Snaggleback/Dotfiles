@@ -15,10 +15,7 @@
     "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 1.8,
-    "editor.rulers": [
-        80,
-        120
-    ],
+    "editor.rulers": [80, 120],
     "workbench.editor.labelFormat": "short",
     "workbench.activityBar.location": "hidden",
     "window.menuBarVisibility": "hidden",
@@ -42,4 +39,11 @@
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "all",
     "markdown.extension.italic.indicator": "_",
+    "markdownlint.config": {
+        "MD030": false
+    },
+    "tailwind-fold.foldStyle": "QUOTES",
+    "tailwind-fold.foldedTextBackgroundColor": "#ffffff00",
+    "tailwind-fold.foldedTextColor": "#ffab70",
+    "tailwind-fold.showTailwindImage": false
 }
