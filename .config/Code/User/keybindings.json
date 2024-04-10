@@ -68,7 +68,7 @@
         "command": "prettier.forceFormatDocument"
     },
     {
-        "key": "ctrl+c ctrl+b",
+        "key": "alt+c alt+b",
         "command": "editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -112,7 +112,7 @@
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "ctrl+c ctrl+l",
+        "key": "alt+c alt+l",
         "command": "editor.action.commentLine"
     }
 ]

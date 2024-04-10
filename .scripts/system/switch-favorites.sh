@@ -90,7 +90,7 @@ favorites=(
     "${BROWSER} https://www.chess.com/home"
 
     "Dotfiles (Atualizar repositório)"
-    "kitty -e \"$HOME/Documentos/Projetos (GitHub)/Dotfiles/update\""
+    "kitty -e \"$HOME/Documentos/Projetos/Dotfiles/update\""
 )
 
 # Array onde vão ficar os nomes que vão ser exibidos
