@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Editor de código que serve para editar os arquivos
+# Editor que será aberto quando o arquivo for escolhido
 EDITOR="code"
 
+# Array onde vão ficar os arquivos que vão ser editados
 files=(
     "i3 - $HOME/.config/i3/config"
     "scripts - $HOME/.scripts"
@@ -15,13 +16,13 @@ files=(
     "bash - $HOME/.bashrc"
 )
 
-# choice receberá a escolha que o usuário clicou ou apertou sobre o enter
+# Cria o menu, e pega o que o usuário escolheu
 choice=$(printf "%s\n" "${files[@]}" | rofi -dmenu)
 
+# Verifica se foi escolhido algo e não teve interrupções
 if [ "${choice}" ]; then
-    # Se a escolha der certo, não tiver interrupções
+    # Se foi escolhido, pega o caminho do arquivo
     file_path=$(echo "${choice}" | awk -F " - " '{print $2}')
-    # Pega o caminho do arquivo que é separado pelo " - "
+    # Abre o arquivo
     $EDITOR "${file_path}"
-    # Abre com o editor definido
 fi

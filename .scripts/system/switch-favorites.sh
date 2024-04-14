@@ -18,15 +18,13 @@ search_favorites() {
     done
 }
 
+# Browser que será aberto quando o favorito for escolhido
 BROWSER="google-chrome-stable --new-tab"
-# EDITOR="code"
-# TERM="kitty"
-# FILEMAN="kitty -e ranger"
 
 favorites=(
-    # Nome à ser exibido
+    # Nome do favorito
     "Amazon.com.br"
-    # Comando à ser executado quando escolhido
+    # Comando que será executado quando o favorito for escolhido
     "${BROWSER} https://www.amazon.com.br/"
 
     "Drive (Google)"

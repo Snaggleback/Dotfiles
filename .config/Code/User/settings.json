@@ -1,4 +1,5 @@
 {
+    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
     "workbench.colorTheme": "Min Dark",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
@@ -6,13 +7,10 @@
     "editor.minimap.enabled": false,
     "editor.stickyScroll.enabled": false,
     "breadcrumbs.enabled": false,
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true,
     "extensions.ignoreRecommendations": true,
     "editor.renderControlCharacters": false,
     "explorer.compactFolders": false,
     "telemetry.telemetryLevel": "off",
-    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
     "editor.fontSize": 14,
     "editor.lineHeight": 1.8,
     "editor.rulers": [80, 120],
@@ -45,5 +43,9 @@
     "tailwind-fold.foldStyle": "QUOTES",
     "tailwind-fold.foldedTextBackgroundColor": "#ffffff00",
     "tailwind-fold.foldedTextColor": "#ffab70",
-    "tailwind-fold.showTailwindImage": false
+    "tailwind-fold.showTailwindImage": false,
+    "codeium.enableConfig": {
+        "*": true,
+        "properties": true
+    }
 }
