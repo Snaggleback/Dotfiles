@@ -1,124 +1,126 @@
 set $mod Mod4
 
+# Definindo a fonte padrão para o i3
 font pango: Cantarell 11
 
+# Executando o DEX
 exec --no-startup-id dex --autostart --environment i3
 
-# Wallpapers
+# Restaundo o wallpaper atual no i3
 exec --no-startup-id nitrogen --restore
 
-# Transparecy, blur, rounded corners
+# Executando o picom, com o arquivo de configuração padrão
 exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
-# night mode controller
+# Usando um script para controlar o modo noturno, verificando se o sistema está no modo noturno
 exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh verify"
 
-# Launch the GNOME Keyring
+# Gnome keyring, necessário para autenticar no sistema
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 
-# Authentication agent
+# Lxpolkit, utilizado para autenticar como usuário root no sistema
 exec --no-startup-id /usr/bin/lxpolkit
 
-# Open navigator
+# Atalho para abrir o google chrome
 bindsym $mod+n exec --no-startup-id google-chrome-stable
-# Open file explorer
+# Atalho para abrir o ranger
 bindsym $mod+e exec --no-startup-id kitty ranger
-# Open telegram
+# Atalho para abrir o vscode
 bindsym $mod+c exec --no-startup-id code
 
-# Disable screen saver
+# Desabilitando o DPMS, para o i3
 exec_always --no-startup-id xset s off -dpms
 
-# Use pactl to adjust volume in PulseAudio.
+# Usando pactl para controlar o volume do sistema
 bindsym XF86AudioRaiseVolume exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh increase"
 bindsym XF86AudioLowerVolume exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh decrease"
 bindsym XF86AudioMute        exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh mute-toggle"
 bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Using playerctl to map my bluetooth headphone commands
+# Usando playerctl para controlar o player do sistema
 bindsym XF86AudioPlay   exec --no-startup-id playerctl play
 bindsym XF86AudioPause  exec --no-startup-id playerctl pause
 bindsym XF86AudioNext   exec --no-startup-id playerctl next 
 bindsym XF86AudioPrev   exec --no-startup-id playerctl previous
 
-# Using brightnessctl to adjust brightness system
+# Usando um script para controlar a luminosidade do sistema
 bindsym XF86MonBrightnessUp   exec --no-startup-id "$HOME/.scripts/system/brightness-controller.sh increase"
 bindsym XF86MonBrightnessDown exec --no-startup-id "$HOME/.scripts/system/brightness-controller.sh decrease"
 
-# Using custom script for screen capture
+# Usando um script para controlar a captura de tela
 bindsym Insert       exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh full"
 bindsym Shift+Insert exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh selected"
 bindsym Mod1+Insert  exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh window"
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+# Use Mouse+$mod para arrastar janelas flutuantes para sua posicao desejada
 floating_modifier $mod
 
-# using custom script to toggle night mode
+# Executando o script de ligar e desligar o modo noturno
 bindsym $mod+Shift+n exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh toggle"
 
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
+# mover janelas em tela via arrastar e soltar ao clicar no título da janela,
+# ou clicar em qualquer lugar na janela enquanto segurar o modificador flutuante
 tiling_drag modifier titlebar
 
-# start a terminal
+# Abre o terminal com o Mod1+Return
 bindsym $mod+Return exec i3-sensible-terminal
 
-# kill focused window
+# Mata/fecha a janela
 bindsym Mod1+F4 kill
 
-# launch apps
+# Atalho para abrir o rofi (lançador de aplicativos)
 bindsym $mod+d exec --no-startup-id rofi -show drun
-# launch power menu
+# Atalho para abrir um script de um menu personalizado (power menu)
 bindsym $mod+Shift+e exec --no-startup-id "$HOME/.scripts/system/power-menu.sh"
-# selector config files
+# Atalho para abrir o script (menu) de troca de arquivos de configuração
 bindsym $mod+Shift+f exec --no-startup-id "$HOME/.scripts/system/switch-files.sh"
-# custom script that lists favorites
+# Atalho para abrir o script (menu) de troca de favoritos
 bindsym $mod+Shift+s exec --no-startup-id "$HOME/.scripts/system/switch-favorites.sh"
 
-# show bluetooth
+# Script personalizado para mostrar informações sobre o bluetooth
 bindsym $mod+Mod1+b exec --no-startup-id "$HOME/.scripts/info/show-bluetooth.sh"
-# show wifi
+# Script personalizado para mostrar informações sobre o wifi
 bindsym $mod+Mod1+w exec --no-startup-id "$HOME/.scripts/info/show-wifi.sh"
-# show date
+# Script personalizado para mostrar informações sobre a data
 bindsym $mod+Mod1+d exec --no-startup-id "$HOME/.scripts/info/show-date.sh"
-# show battery
+# Script personalizado para mostrar informações sobre a bateria
 bindsym $mod+Mod1+p exec --no-startup-id "$HOME/.scripts/info/show-battery.sh"
 
-# shortcut to clear notifications
+# Atalho para limpar as notificações do dunst
 bindsym $mod+Delete exec --no-startup-id dunstctl close-all
 
-# alternatively, you can use the cursor keys:
+# Atalhos para modificar a janela de foco
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# alternatively, you can use the cursor keys:
+# Atalhos para mover a janela
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in vertical orientation
+# Define o atalho de split da janela
 bindsym $mod+semicolon split toggle
 
-# enter fullscreen mode for the focused container
+# Entre no modo de tela cheia
 bindsym F11 fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
+# Muda o layout do i3 (stacked, tabbed, toggle split)
 bindsym $mod+Shift+t layout toggle all
 
-# toggle tiling / floating
+# Muda para o modo tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
+# alterar foco entre janelas em tiling / flutuante
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
+# enfoca o contêiner pai
 bindsym $mod+a focus parent
 
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+# Define nomes para os espaços de trabalho padrão para os quais configuramos os atalhos de teclado posteriormente.
+# Usamos variáveis para evitar repetir os nomes em vários lugares
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -130,7 +132,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# switch to workspace
+# Alternar para espaço de trabalho
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -142,7 +144,7 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-# move focused container to workspace
+# Mover contêiner focado para espaço de trabalho
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -154,12 +156,10 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# reload the configuration file
+# Recarregar o arquivo de configuração
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# Reiniciar o i3 no local (preserva seu layout/sessão, pode ser usado para atualizar o i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -204,3 +204,4 @@ client.background       #FFFFFF
 # Gaps
 gaps inner 10
 gaps outer 1
+
