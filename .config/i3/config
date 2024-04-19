@@ -3,9 +3,6 @@ set $mod Mod4
 # Definindo a fonte padrão para o i3
 font pango: Cantarell 11
 
-# Executando o DEX
-exec --no-startup-id dex --autostart --environment i3
-
 # Restaundo o wallpaper atual no i3
 exec --no-startup-id nitrogen --restore
 

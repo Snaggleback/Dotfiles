@@ -6,12 +6,13 @@
 # Executando o script de frases aleatórias
 cowsay "$("$HOME/.scripts/info/random-phrases.sh")"
 
-# Colore a saída do comando
+# Colore a saída do comando ls
 alias ls='ls --color=auto'
+# Colore a saída do comando grep
 alias grep='grep --color=auto'
 
 # Comando melhorado de limpar a tela
-alias clear='printf "\E[H\E[3J" && clear'
+alias clear='tput reset'
 
 # Atalhos para o gerenciador de pacotes:
 alias remove='sudo pacman -Rns'  # Remove um programa
@@ -25,6 +26,9 @@ alias orphans='pacman -Qdtq'     # Lista os pacotes orfãos
 alias compose='docker-compose' # Atalho para docker-compose
 
 # Agora exibe o ascii do cowsay dizendo uma frase aleatória quando o comando roda
-alias neofetch='neofetch --ascii "$(cowsay -W 20 $("$HOME/.scripts/info/random-phrases.sh"))"'
+alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/random-phrases.sh"))"'
+
+# Define o comando 'gpt' como o comando 'tgpt'
+alias gpt='tgpt'
 
 PS1='[\u@\h \W]\$ '
