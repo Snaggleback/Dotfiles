@@ -5,6 +5,9 @@ battery_level=$(acpi -b | awk '{print $4}' | tr -d '%,')
 # Carregando ou descarregando
 battery_status=$(acpi -b | awk '{print $3}' | tr -d ',')
 
+# Porcetagem da bateria caso ele esteja usando a energia da fonte de alimentação
+[ "${battery_level}" == "charging" ] && battery_level=100
+
 # Icone da bateria se for carregando ou descarregando
 [ "${battery_status}" == "Charging" ] && icon_variable="-charging"
 # Icone da bateria dependendo da porcetagem da bateria
