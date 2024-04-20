@@ -47,5 +47,8 @@
         "*": true,
         "properties": true
     },
-    "workbench.colorTheme": "Min Dark"
+    "workbench.colorTheme": "Min Dark",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
