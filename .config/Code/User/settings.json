@@ -1,6 +1,5 @@
 {
     "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
-    "workbench.colorTheme": "Min Dark",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
@@ -47,5 +46,6 @@
     "codeium.enableConfig": {
         "*": true,
         "properties": true
-    }
+    },
+    "workbench.colorTheme": "Min Dark"
 }
