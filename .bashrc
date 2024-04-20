@@ -31,4 +31,6 @@ alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/r
 # Define o comando 'gpt' como o comando 'tgpt'
 alias gpt='tgpt'
 
+alias dots="$HOME/Documentos/Projetos/Dots-Manager/dots.sh"
+
 PS1='[\u@\h \W]\$ '

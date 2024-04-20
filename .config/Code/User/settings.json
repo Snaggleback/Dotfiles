@@ -45,7 +45,8 @@
     "tailwind-fold.showTailwindImage": false,
     "codeium.enableConfig": {
         "*": true,
-        "properties": true
+        "properties": true,
+        "ignore": true
     },
     "workbench.colorTheme": "Min Dark",
     "[json]": {
