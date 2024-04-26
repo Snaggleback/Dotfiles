@@ -52,7 +52,8 @@
     "codeium.enableConfig": {
         "*": true,
         "properties": true,
-        "ignore": true
+        "ignore": true,
+        "markdown": true
     },
     // Configurações de tailwind
     "tailwind-fold.foldStyle": "QUOTES",
@@ -60,5 +61,6 @@
     "tailwind-fold.foldedTextColor": "#ffab70",
     "tailwind-fold.showTailwindImage": false,
     // Configurações de telemetry
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
