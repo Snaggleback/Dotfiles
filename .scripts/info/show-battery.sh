@@ -44,6 +44,10 @@ case "${battery_status}" in
     # Mostra informaçãões sobre a bateria se estiver completamente carregada
     notify-send -a "Informações sobre a bateria" -r 6666 -i "${icon_battery}" "Sua bateria está completamente carregada!"
     ;;
+"Empty")
+    # Mostra informaçãões sobre a bateria se estiver completamente descarregada
+    notify-send -a "Informações sobre a bateria" -r 6666 -i "${icon_battery}" "Sua bateria está completamente descarregada!"
+    ;;
 esac
 
 # Mostra o status da bateria no terminal como uma forma de "debug"
