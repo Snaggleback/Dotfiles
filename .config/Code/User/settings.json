@@ -62,5 +62,6 @@
     "tailwind-fold.showTailwindImage": false,
     // Configurações de telemetry
     "telemetry.telemetryLevel": "off",
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
 }
