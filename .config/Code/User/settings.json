@@ -32,8 +32,7 @@
     "extensions.ignoreRecommendations": true,
     // Configurações de shellcheck
     "shellcheck.ignorePatterns": {
-        "**/i3/**": true,
-        "**/*.bashrc": true
+        "**/i3/**": true
     },
     // Configurações de prettier
     "apc.stylesheet": {
@@ -63,5 +62,5 @@
     // Configurações de telemetry
     "telemetry.telemetryLevel": "off",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
 }

@@ -1,3 +1,4 @@
+#!/bin/bash
 # ~/.bashrc
 
 # Se não estiver executando interativamente, não faz nada
@@ -31,6 +32,21 @@ alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/r
 # Define o comando 'gpt' como o comando 'tgpt'
 alias gpt='tgpt'
 
-alias dots="$HOME/Documentos/Projetos/Dots-Manager/dots.sh"
+# Atalho para executar o script 'dots.sh'
+alias dots='$HOME/Documentos/Projetos/Dots-Manager/dots.sh'
+
+# Função para descompactar arquivos .zip
+unzipdir() {
+    local dir_name
+    # Se o primeiro argumento for vazio, exibe o uso e retorna 1
+    if [ -z "$1" ]; then
+        echo "Modo de uso: unzipdir <file.zip>"
+        return 1
+    fi
+    # Cria o nome do diretório e descompacta o arquivo
+    dir_name=$(basename "$1" .zip)
+    # Cria o diretório e descompacta o arquivo
+    unzip "$1" -d "$dir_name"
+}
 
 PS1='[\u@\h \W]\$ '

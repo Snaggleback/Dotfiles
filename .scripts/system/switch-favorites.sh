@@ -81,9 +81,6 @@ favorites=(
     "Instagram"
     "${BROWSER} https://www.instagram.com/"
 
-    "Connectar Cursos"
-    "${BROWSER} https://www.connectareducacional.com.br/metodo/index.php"
-
     "Chess.com (Xadrez online)"
     "${BROWSER} https://www.chess.com/home"
 
