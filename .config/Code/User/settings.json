@@ -63,4 +63,7 @@
     "telemetry.telemetryLevel": "off",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
