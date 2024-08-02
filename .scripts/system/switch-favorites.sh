@@ -45,6 +45,9 @@ favorites=(
     "YouTube Music"
     "${BROWSER} https://music.youtube.com/"
 
+    "Netflix"
+    "${BROWSER} https://www.netflix.com/browse"
+
     "WhatsApp"
     "${BROWSER} https://web.whatsapp.com/"
 

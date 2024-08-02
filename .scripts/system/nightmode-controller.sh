@@ -38,12 +38,6 @@ verify_status() {
     fi
 }
 
-if [ "$(get_status)" = "on" ]; then
-    echo ""
-else
-    echo ""
-fi
-
 case "${1}" in
 "on")
     turn_on
