@@ -87,6 +87,9 @@ favorites=(
     "Chess.com (Xadrez online)"
     "${BROWSER} https://www.chess.com/home"
 
+    "Duolingo"
+    "${BROWSER} https://www.duolingo.com/learn"
+
     "Dotfiles (Atualizar repositório)"
     "kitty -e \"$HOME/Documentos/Projetos/Dots-Manager/dots.sh\""
 )
