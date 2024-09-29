@@ -29,9 +29,6 @@ alias compose='docker-compose' # Atalho para docker-compose
 # Agora exibe o ascii do cowsay dizendo uma frase aleatória quando o comando roda
 alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/random-phrases.sh"))"'
 
-# Define o comando 'gpt' como o comando 'tgpt'
-alias gpt='tgpt'
-
 # Atalho para executar o script 'dots.sh'
 alias dots='$HOME/Documentos/Projetos/Dots-Manager/dots.sh'
 
