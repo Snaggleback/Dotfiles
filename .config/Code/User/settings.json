@@ -19,13 +19,11 @@
     "explorer.fileNesting.enabled": true,
     // Configurações da janela do Visual Studio Code
     "workbench.editor.labelFormat": "short",
-    "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.editor.editorActionsLocation": "hidden",
     "window.customTitleBarVisibility": "auto",
     "window.commandCenter": false,
-    "window.menuBarVisibility": "hidden",
     "window.restoreWindows": "none",
     // Configurações de extensões e ferramentas
     "breadcrumbs.enabled": false,
@@ -65,5 +63,7 @@
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.activityBar.location": "hidden",
+    "window.menuBarVisibility": "toggle"
 }
