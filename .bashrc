@@ -30,7 +30,7 @@ alias compose='docker-compose' # Atalho para docker-compose
 alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/random-phrases.sh"))"'
 
 # Atalho para executar o script 'dots.sh'
-alias dots='$HOME/Documentos/Projetos/Dots-Manager/dots.sh'
+alias dot='$HOME/Documentos/Projetos/Simple-Git-Manager/dot.sh'
 
 # Função para descompactar arquivos .zip
 unzipdir() {

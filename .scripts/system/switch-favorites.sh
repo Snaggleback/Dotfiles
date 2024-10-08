@@ -91,7 +91,7 @@ favorites=(
     "${BROWSER} https://www.duolingo.com/learn"
 
     "Dotfiles (Atualizar repositório)"
-    "kitty -e \"$HOME/Documentos/Projetos/Dots-Manager/dots.sh\""
+    "kitty -e \"$HOME/Documentos/Projetos/Simple-Git-Manager/dot.sh\""
 )
 
 # Array onde vão ficar os nomes que vão ser exibidos
