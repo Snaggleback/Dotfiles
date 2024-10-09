@@ -14,6 +14,7 @@ files=(
     "dusnt - $HOME/.config/dunst/dunstrc"
     "neofetch - $HOME/.config/neofetch/config.conf"
     "bash - $HOME/.bashrc"
+    "vim - $HOME/.vimrc"
 )
 
 # Cria o menu, e pega o que o usuário escolheu
