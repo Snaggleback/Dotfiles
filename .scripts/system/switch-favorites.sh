@@ -90,6 +90,9 @@ favorites=(
     "Duolingo"
     "${BROWSER} https://www.duolingo.com/learn"
 
+    "Pinterest"
+    "${BROWSER} https://br.pinterest.com/"
+
     "Dotfiles (Atualizar arquivos de configuração)"
     "kitty -e \"$HOME/Documentos/Projetos/Simple-Git-Manager/dot.sh\""
 )
