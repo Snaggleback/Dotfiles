@@ -11,8 +11,8 @@ Compartilhando a forma de como eu utilizo meu computador, minha persolização p
 Este repositório contém minhas configurações pessoais para o gerenciador de janelas i3wm no Arch Linux. Aqui estão detalhes sobre os softwares, imagens e papéis de parede que utilizo. Sou um usuário simples ;)
 
 ![Minha área de trabalho minimalista](./Imagens/Capturas-de-tela/captura-de-tela-09-04-24-21-35-08.png)
-![Minha área de trabalho minimalista](./Imagens/Capturas-de-tela/captura-de-tela-09-04-24-21-34-47.png)
-![Minha área de trabalho minimalista](./Imagens/Capturas-de-tela/captura-de-tela-09-04-24-21-37-43.png)
+![Minha área de trabalho minimalista](./Imagens/Capturas-de-tela/captura-de-tela-12-10-24-11-52-41.png)
+![Minha área de trabalho minimalista](./Imagens/Capturas-de-tela/captura-de-tela-12-10-24-11-58-42.png)
 
 ## Tema da Nova Aba
 
