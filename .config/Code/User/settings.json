@@ -65,5 +65,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "workbench.activityBar.location": "hidden",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
