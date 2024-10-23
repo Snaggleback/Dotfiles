@@ -49,6 +49,9 @@ bindsym Insert       exec --no-startup-id "$HOME/.scripts/system/screenshot-cont
 bindsym Shift+Insert exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh selected"
 bindsym Mod1+Insert  exec --no-startup-id "$HOME/.scripts/system/screenshot-controller.sh window"
 
+# Usando um script para ler QR-Codes
+bindsym $mod+q exec --no-startup-id "$HOME/.scripts/system/barcode-reader.sh"
+
 # Use Mouse+$mod para arrastar janelas flutuantes para sua posicao desejada
 floating_modifier $mod
 
