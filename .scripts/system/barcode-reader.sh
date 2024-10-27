@@ -3,8 +3,10 @@
 # Captura uma região da tela com maim
 maim -o -u -s /tmp/barcode-reader-img.png
 
+# Melhora a imagem do QR Code
+convert /tmp/barcode-reader-img.png -colorspace Gray -threshold 60% /tmp/barcode-reader-img-processed.png
 # Lê o QR Code da captura usando zbarimg
-qr_result=$(zbarimg --raw /tmp/barcode-reader-img.png 2>/dev/null)
+qr_result=$(zbarimg --raw /tmp/barcode-reader-img-processed.png 2>/dev/null)
 
 # Verifica se o QR Code foi lido corretamente
 if [ -n "$qr_result" ]; then
