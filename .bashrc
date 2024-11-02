@@ -47,3 +47,17 @@ unzipdir() {
 }
 
 PS1='[\u@\h \W]\$ '
+
+videodl() {
+    # Baixa um video no formato mp4 no melhor formato de qualidade
+    yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' -o '%(title)s.%(ext)s' "$1"
+}
+audiodl() {
+    # Baixa o audio de um video no formato mp3 e adiciona metadados
+    yt-dlp -f 'bestaudio' \
+        --extract-audio --audio-format mp3 \
+        --embed-thumbnail \
+        --add-metadata \
+        --metadata-from-title "%(artist)s - %(title)s" \
+        -o '%(title)s.%(ext)s' "$1"
+}
