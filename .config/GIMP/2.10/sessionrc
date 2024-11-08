@@ -17,7 +17,7 @@
     (aux-info
         (left-docks-width "71")
         (right-docks-width "323")
-        (maximized "no"))
+        (maximized "yes"))
     (gimp-toolbox
         (side left))
     (gimp-dock
