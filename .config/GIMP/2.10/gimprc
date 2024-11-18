@@ -49,7 +49,7 @@
 (icon-theme "Symbolic-High-Contrast")
 (selection-feather-radius 300)
 (selection-grow-radius 10)
-(selection-shrink-radius 4)
+(selection-shrink-radius 8)
 (fill-options
     (style solid)
     (antialias yes)

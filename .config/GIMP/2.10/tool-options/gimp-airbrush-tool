@@ -1,6 +1,6 @@
 # GIMP gimp-airbrush-tool options
 
-(foreground (color-rgb 0.9490196704864502 0.9490196704864502 0.9490196704864502))
+(foreground (color-rgb 1 1 1))
 (brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (gradient "Standard")

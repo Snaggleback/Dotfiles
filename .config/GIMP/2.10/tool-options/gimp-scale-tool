@@ -1,5 +1,10 @@
 # GIMP gimp-scale-tool options
 
 (interpolation linear)
+(constrain-move yes)
+(constrain-rotate yes)
+(constrain-shear no)
+(constrain-perspective yes)
+(cornersnap yes)
 
 # end of gimp-scale-tool options
