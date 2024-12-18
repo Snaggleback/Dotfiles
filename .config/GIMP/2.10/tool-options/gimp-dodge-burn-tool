@@ -4,6 +4,6 @@
 (brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (palette "Standard")
-(brush-size 549)
+(brush-size 127)
 
 # end of gimp-dodge-burn-tool options
