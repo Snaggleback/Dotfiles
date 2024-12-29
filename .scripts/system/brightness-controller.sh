@@ -1,6 +1,6 @@
 #!/bin/bash
 
-increase_on=5
+increase_on=1
 decrease_on=$increase_on
 maximum=100
 minimum=$increase_on
