@@ -47,6 +47,7 @@
     (padding-in-show-all no))
 (theme "System")
 (icon-theme "Symbolic-High-Contrast")
+(layer-add-mask-type selection)
 (selection-feather-radius 300)
 (selection-grow-radius 10)
 (selection-shrink-radius 8)
