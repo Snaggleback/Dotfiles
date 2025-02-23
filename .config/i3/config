@@ -25,8 +25,10 @@ bindsym $mod+e exec --no-startup-id kitty ranger
 # Atalho para abrir o vscode
 bindsym $mod+c exec --no-startup-id code
 
-# Desabilitando o DPMS, para o i3
-exec_always --no-startup-id xset s off -dpms
+# Configura o DPMS para desligar a tela após um período de inatividade
+exec --no-startup-id xset dpms 300 600 900
+# Desativa o protetor de tela (screensaver)
+exec --no-startup-id xset s off
 
 # Usando pactl para controlar o volume do sistema
 bindsym XF86AudioRaiseVolume exec --no-startup-id "$HOME/.scripts/system/audio-controller.sh increase"
