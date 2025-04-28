@@ -68,5 +68,6 @@
     "window.menuBarVisibility": "toggle",
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "window.titleBarStyle": "native"
 }

@@ -18,6 +18,9 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,s
 # Lxpolkit, utilizado para autenticar como usuário root no sistema
 exec --no-startup-id /usr/bin/lxpolkit
 
+# Montar automaticamente ao inserir o pendrive
+exec --no-startup-id udiskie --no-notify --automount
+
 # Atalho para abrir o google chrome
 bindsym $mod+n exec --no-startup-id google-chrome-stable
 # Atalho para abrir o ranger
