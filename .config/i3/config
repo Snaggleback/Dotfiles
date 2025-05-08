@@ -62,7 +62,8 @@ bindsym $mod+o exec --no-startup-id "$HOME/.scripts/info/color-picker.sh"
 floating_modifier $mod
 
 # Executando o script de ligar e desligar o modo noturno
-bindsym $mod+Shift+n exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh toggle"
+bindsym Shift+XF86MonBrightnessUp exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh up"
+bindsym Shift+XF86MonBrightnessDown exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh down"
 
 # mover janelas em tela via arrastar e soltar ao clicar no título da janela,
 # ou clicar em qualquer lugar na janela enquanto segurar o modificador flutuante

@@ -18,6 +18,11 @@ if [ "$mute" = "yes" ] || [ "$volume" -eq 0 ]; then
     color_message="#949494"
 fi
 
+if [ "$volume" -eq 100 ]; then
+     output_message=""
+fi
+
+
 echo "$output_message"
 echo
 echo "$color_message"

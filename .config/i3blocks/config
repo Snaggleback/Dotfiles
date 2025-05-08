@@ -26,9 +26,9 @@ interval=repeat
 command=~/.config/i3blocks/scripts/brightness
 interval=repeat
 
-[weather]
-command=~/.config/i3blocks/scripts/weather
-interval=3600
+[nightmode]
+command=~/.config/i3blocks/scripts/nightmode
+interval=repeat
 
 [battery]
 command=~/.config/i3blocks/scripts/battery

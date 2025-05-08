@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Arquivos de estado e temperatura atual
+state_file="$HOME/.status/nightmode"
+temp_file="$HOME/.status/nightmode_temp"
+
+# Retorna a porcentagem atual da intensidade do modo noturno (0% a 100%)
+get_temp_percent() {
+    if [ -f "$temp_file" ]; then
+        temp=$(cat "$temp_file")
+    else
+        temp=2500
+    fi
+
+    # Garante que os valores estejam no intervalo definido
+    range=$((6500 - 2500))
+    value=$((6500 - temp))
+
+    if [ "$range" -eq 0 ]; then
+        echo "0"
+        return
+    fi
+
+    percent=$((value * 100 / range))
+    echo "$percent"
+}
+
+# Verifica e aplica o modo noturno se estiver ativo
+verify_state() {
+    current_state="off"
+    if [ -f "$state_file" ]; then
+        current_state=$(cat "$state_file")
+    fi
+    echo "$current_state"
+}
+
+if [ "$(verify_state)" == "off" ]; then
+    #    echo "󰹐    Desativado"
+    echo
+else
+    echo "󱩌    $(get_temp_percent)%"
+fi
