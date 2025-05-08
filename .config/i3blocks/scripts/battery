@@ -1,0 +1,11 @@
+#!/bin/bash
+
+battery_level=$(acpi -b | awk '{print $4}' | tr -d '%,')
+battery_status=$(acpi -b | awk '{print $3}' | tr -d ',')
+
+battery_charging_icon="󰁹"
+
+[ "${battery_status}" == "Charging" ] && battery_charging_icon="󰂄"
+[ "${battery_level}" == "charging" ] && battery_level=100
+
+echo "${battery_charging_icon}  ${battery_level}%    "

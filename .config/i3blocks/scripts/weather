@@ -1,0 +1,5 @@
+#!/bin/bash
+
+weather_castanhal=$(curl -s 'https://wttr.in/Castanhal?format=%t%20(%f),%20%C&lang=pt' | sed 's/+//g')
+
+echo "   $weather_castanhal"

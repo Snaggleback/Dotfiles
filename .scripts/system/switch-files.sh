@@ -6,6 +6,7 @@ EDITOR="code"
 # Array onde vão ficar os arquivos que vão ser editados
 files=(
     "i3 - $HOME/.config/i3/config"
+    "i3blocks - $HOME/.config/i3blocks/"
     "scripts - $HOME/.scripts"
     "kitty - $HOME/.config/kitty/kitty.conf"
     "rofi - $HOME/.config/rofi"

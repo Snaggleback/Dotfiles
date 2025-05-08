@@ -194,6 +194,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh on"
 
+# Alternar a visibilidade da barra de status
+bindsym $mod+b bar mode toggle
+
 # Borders
 for_window [class="^.*"] border pixel 0
 default_border pixel 0
@@ -211,3 +214,22 @@ client.background       #FFFFFF
 gaps inner 10
 gaps outer 1
 
+# Barra de status
+
+bar {
+    status_command i3blocks
+    font pango:Cantarel 10
+    modifier Mod4+Shift
+    mode hide
+
+    colors {
+        background        #1A1A1A  # fundo da barra
+        statusline        #CCCCCC  # cor do texto dos blocos
+        separator         #2C2C2C  # divisores entre blocos
+
+        focused_workspace  #1A1A1A #1A1A1A #FFFFFF
+        active_workspace   #1A1A1A #1A1A1A #DDDDDD
+        inactive_workspace #1A1A1A #1A1A1A #999999
+        urgent_workspace   #1A1A1A #1A1A1A #eb4034
+    }
+}

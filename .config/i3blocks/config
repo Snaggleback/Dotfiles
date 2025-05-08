@@ -1,0 +1,24 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+# Global properties
+separator=false
+separator_block_width=15
+
+[time]
+command=~/.config/i3blocks/scripts/date
+interval=1
+
+# Guess the weather hourly
+[weather]
+command=~/.config/i3blocks/scripts/weather
+interval=3600
+
+[battery]
+command=~/.config/i3blocks/scripts/battery
+interval=1
+
