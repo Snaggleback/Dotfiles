@@ -9,3 +9,10 @@ battery_charging_icon="󰁹"
 [ "${battery_level}" == "charging" ] && battery_level=100
 
 echo "${battery_charging_icon}  ${battery_level}%    "
+
+echo ""
+
+if [ "${battery_level}" -le 35 ]; then
+    echo "#ff6166"
+fi
+

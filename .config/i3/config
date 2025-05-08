@@ -220,7 +220,7 @@ bar {
     status_command i3blocks
     font pango:Cantarel 10
     modifier Mod4+Shift
-    mode hide
+    position top
 
     colors {
         background        #1A1A1A  # fundo da barra
@@ -230,6 +230,6 @@ bar {
         focused_workspace  #1A1A1A #1A1A1A #FFFFFF
         active_workspace   #1A1A1A #1A1A1A #DDDDDD
         inactive_workspace #1A1A1A #1A1A1A #999999
-        urgent_workspace   #1A1A1A #1A1A1A #eb4034
+        urgent_workspace   #1A1A1A #1A1A1A #ff6166
     }
 }

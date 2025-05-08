@@ -29,7 +29,7 @@ icon_battery="$HOME/.icons/system/battery${icon_variable}-${icon_variable_bar}.p
 # Altera o status da bateria caso ela seja maior que 98 ou o status for igual a "Not"
 [ "${battery_level}" -ge 98 ] || [ "${battery_status}" == "Not" ] && battery_status="Full"
 # Altera o status da bateria caso ela seja menor que 18 para "Empty"
-[ "${battery_level}" -le 18 ] && battery_status="Empty"
+[ "${battery_level}" -le 8 ] && battery_status="Empty"
 
 case "${battery_status}" in
 "Discharging")

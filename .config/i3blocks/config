@@ -13,7 +13,15 @@ separator_block_width=15
 command=~/.config/i3blocks/scripts/date
 interval=1
 
-# Guess the weather hourly
+[arch-update]
+command=~/.config/i3blocks/scripts/arch-update -y
+interval=3600
+markup=pango
+
+[brightness]
+command=~/.config/i3blocks/scripts/brightness
+interval=1
+
 [weather]
 command=~/.config/i3blocks/scripts/weather
 interval=3600

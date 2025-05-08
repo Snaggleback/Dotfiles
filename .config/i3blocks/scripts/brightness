@@ -1,0 +1,6 @@
+#!/bin/bash
+
+brightness=$(brightnessctl get)
+brightness=$((brightness / 80))
+
+echo "󰃠    ${brightness}%"
