@@ -12,10 +12,6 @@ if [ "$volume" -gt 100 ]; then
     color_message="#ff6257"
 fi
 
-if [ "$volume" -eq 100 ]; then
-     output_message=""
-fi
-
 # Mudo ou volume zerado
 if [ "$mute" = "yes" ] || [ "$volume" -eq 0 ]; then
     output_message="󰝛    Mudo"

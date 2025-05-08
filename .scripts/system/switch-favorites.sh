@@ -29,7 +29,7 @@ favorites=(
     "Duolingo"                           "${BROWSER} https://www.duolingo.com/learn"
     "Pinterest"                          "${BROWSER} https://br.pinterest.com/"
     "TikTok"                             "${BROWSER} https://www.tiktok.com/messages?lang=pt-BR"
-    "Arquivos de C onfiguração"        "kitty -e \"$HOME/Documentos/Projetos/Simple-Git-Manager/dot.sh\""
+    "Arquivos de Configuração"           "kitty -e \"$HOME/Documentos/Projetos/Simple-Git-Manager/dot.sh\""
 )
 
 # Separando nomes e comandos

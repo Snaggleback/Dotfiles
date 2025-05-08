@@ -79,7 +79,7 @@ decrease_intensity() {
             "Modo noturno desativado"
     else
         percent=$((100 - ((new_temp - DEFAULT_TEMP) * 100 / (DEFAULT_NIGHT_TEMP - DEFAULT_TEMP))))
-        notify-send -a "Modo noturno" -r 6666 -i "$HOME/.icons/system/nightmode-off.png" \
+        notify-send -a "Modo noturno" -r 6666 -i "$HOME/.icons/system/nightmode.png" \
             "Modo noturno diminuído para ${percent}%"
     fi
 

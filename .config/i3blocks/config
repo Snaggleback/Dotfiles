@@ -22,12 +22,12 @@ markup=pango
 command=~/.config/i3blocks/scripts/audio
 interval=repeat
 
-[brightness]
-command=~/.config/i3blocks/scripts/brightness
-interval=repeat
-
 [nightmode]
 command=~/.config/i3blocks/scripts/nightmode
+interval=repeat
+
+[brightness]
+command=~/.config/i3blocks/scripts/brightness
 interval=repeat
 
 [battery]
