@@ -307,6 +307,8 @@ Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir 
   - **Economia de Energia:**
     -   `TLP`: Um utilitário para gerenciar a eficiência energia do sistema
     -   `CpuPower`: Um utilitário para gerenciar a eficiência da CPU do sistema
+  -   **Barra de Status:**
+      -   `i3blocks`: Um gerenciador de status modular para a barra do i3wm, que permite exibir informações como volume, bateria, data, uso de CPU/RAM, entre outros, por meio de scripts personalizáveis
 
 </details>
 
