@@ -1,0 +1,23 @@
+#!/bin/bash
+
+volume=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1)
+mute=$(pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)')
+
+# Mensagem e cor padrão
+output_message="    ${volume}%"
+color_message="#CCCCCC"
+
+# Volume acima de 100%
+if [ "$volume" -gt 100 ]; then
+    color_message="#ff6257"
+fi
+
+# Mudo ou volume zerado
+if [ "$mute" = "yes" ] || [ "$volume" -eq 0 ]; then
+    output_message="󰝛    Mutado"
+    color_message="#949494"
+fi
+
+echo "$output_message"
+echo
+echo "$color_message"

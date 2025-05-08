@@ -18,9 +18,13 @@ command=~/.config/i3blocks/scripts/arch-update -y
 interval=3600
 markup=pango
 
+[audio]
+command=~/.config/i3blocks/scripts/audio
+interval=repeat
+
 [brightness]
 command=~/.config/i3blocks/scripts/brightness
-interval=1
+interval=repeat
 
 [weather]
 command=~/.config/i3blocks/scripts/weather
@@ -28,5 +32,5 @@ interval=3600
 
 [battery]
 command=~/.config/i3blocks/scripts/battery
-interval=1
+interval=repeat
 
