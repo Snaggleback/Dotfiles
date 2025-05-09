@@ -53,10 +53,10 @@ Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim.
 
 <details> <summary>Fontes que utilizo no meu sistema</summary>
 
-    ```text
-    pacman -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-noto-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
-    fc-cache -f
-    ```
+```bash
+pacman -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-noto-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+fc-cache -f
+```
 
 </details>
 
