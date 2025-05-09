@@ -27,6 +27,26 @@ Para personalizar minha nova aba, utilizo a extensão NightTab com a seguinte pe
 
 </details>
 
+## Configurar tap-to-click e Rolagem Natural
+
+Para configurar o tap-to-click e a rolagem natural, eu faço o seguinte: Crio o arquivo ou edito `/etc/X11/xorg.conf.d/30-touchpad.conf` com o seguinte conteúdo:
+
+<details> <summary>Conteúdo tap-to-click e rolagem natural</summary>
+
+```txt
+Section "InputClass"
+    Identifier "touchpad"
+    MatchIsTouchpad "on"
+    Driver "libinput"
+    Option "Tapping" "on"             # Tap to click
+    Option "NaturalScrolling" "true"  # Scroll natural (tipo macOS)
+    Option "DisableWhileTyping" "true"
+    Option "ClickMethod" "clickfinger"
+EndSection
+```
+
+</details>
+
 ## Sofware utilizados
 
 Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim. Eu tenho algumas fontes extras que não utilizo, mas caso eu quero mudar de fonte, já tem a opção, aqui as fontes que utilizo no meu sistema:
@@ -60,6 +80,7 @@ Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir 
       -   `Main`: Uma ferramenta de captura de tela rápida e eficiente
       -   `Xclip`: Um utilitário para interagir com a área de transferência do X
       -   `Xdotool`: Uma ferramenta para automatizar interações com janelas X
+      -   `Xcolor`: Um utilitário para capturar cores da tela com o mouse
   -   **Controle de Brilho:**
       -   `Brightnessctl`: Uma ferramenta para controlar o brilho da tela em sistemas que suportam o controle de brilho
   -   **Controle de Áudio:**
@@ -91,6 +112,14 @@ Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir 
     -   `CpuPower`: Um utilitário para gerenciar a eficiência da CPU do sistema
   -   **Barra de Status:**
       -   `i3blocks`: Um gerenciador de status modular para a barra do i3wm, que permite exibir informações como volume, bateria, data, uso de CPU/RAM, entre outros, por meio de scripts personalizáveis
+  - **Leitor de Código de Barras / QR Code:**
+      -   `Zbar`: Ferramenta de linha de comando para ler códigos de barras e QR codes a partir da câmera ou imagens
+  - **Terminal:**
+      -   `Neofetch`: Mostra informações do sistema de forma visual no terminal
+      -   `Cowsay`: Gera mensagens divertidas no terminal com figuras em ASCII
+      -   `jq`: Um processador de linha de comando leve e poderoso para manipular e analisar dados JSON
+  - **Downloads de Vídeos:**
+      -   `yt-dlp`: Um utilitário moderno de linha de comando para baixar vídeos e áudios de sites como YouTube
 
 </details>
 

@@ -4,7 +4,6 @@
 options=(
     "Desligar"
     "Reiniciar"
-    "Bloquear tela"
     "Encerrar sessão"
 )
 
@@ -19,8 +18,5 @@ case $choice in
     ;;
 "Encerrar sessão")
         pkill -KILL -u "$USER"
-    ;;
-"Bloquear tela")
-        dm-tool switch-to-greeter
     ;;
 esac

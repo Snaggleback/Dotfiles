@@ -69,5 +69,7 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "editor.cursorStyle": "line",
+    "security.workspace.trust.untrustedFiles": "open"
 }

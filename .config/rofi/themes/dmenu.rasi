@@ -8,7 +8,7 @@
     background-color:       #1c1c1c;
     border-color:           #d6d6d6;
     text-color:             #d6d6d6;
-    font:                   "Cantarel 9";
+    font:                   "Cantarell 9";
 }
 window {
     anchor:     south;

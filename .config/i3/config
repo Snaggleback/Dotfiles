@@ -169,7 +169,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode "redimensionar" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -193,7 +193,7 @@ mode "resize" {
         bindsym $mod+r mode "default" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh off"
 }
 
-bindsym $mod+r mode "resize" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh on"
+bindsym $mod+r mode "redimensionar" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh on"
 
 # Alternar a visibilidade da barra de status
 bindsym $mod+b bar mode toggle
@@ -219,7 +219,7 @@ gaps outer 1
 
 bar {
     status_command i3blocks
-    font pango:Cantarel 10
+    font pango:Cantarell 10
     modifier Mod4+Shift
     position top
 

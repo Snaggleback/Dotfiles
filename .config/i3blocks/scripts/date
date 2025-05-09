@@ -1,6 +1,6 @@
 #!/bin/bash
 
 formatted_date=$(LC_TIME=pt_BR.UTF-8 date "+%A, %-d de %B")
-formatted_hours=$(LC_TIME=pt_BR.UTF-8 date "+%H:%M:%S")
+formatted_hours=$(LC_TIME=pt_BR.UTF-8 date "+%H:%M")
 
 echo  "    ${formatted_date}        ${formatted_hours}"

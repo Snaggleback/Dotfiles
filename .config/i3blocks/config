@@ -11,26 +11,9 @@ separator_block_width=15
 
 [time]
 command=~/.config/i3blocks/scripts/date
-interval=1
-
-[arch-update]
-command=~/.config/i3blocks/scripts/arch-update -y
-interval=3600
-markup=pango
-
-[audio]
-command=~/.config/i3blocks/scripts/audio
-interval=repeat
-
-[nightmode]
-command=~/.config/i3blocks/scripts/nightmode
-interval=repeat
-
-[brightness]
-command=~/.config/i3blocks/scripts/brightness
-interval=repeat
+interval=30
 
 [battery]
 command=~/.config/i3blocks/scripts/battery
-interval=repeat
+interval=30
 
