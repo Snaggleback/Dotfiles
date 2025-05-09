@@ -87,8 +87,8 @@ Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir 
 
 <details> <summary>Listagem de programas utilizados</summary>
 
-  -   **AUR:**
-      -   `Yay`: Um gerenciador de pacotes AUR (Arch User Repository) para facilitar a instalação de software não oficial no Arch Linux
+- **AUR:**
+  - `Yay`: Um gerenciador de pacotes AUR (Arch User Repository) para facilitar a instalação de software não oficial no Arch Linux
 
 ```bash
 cd /temp
@@ -97,80 +97,80 @@ cd yay
 makepkg -si
 ```
 
-  -   **Edição de Imagens:**
-      -   `GIMP`: Um poderoso editor de imagens de código aberto com uma ampla gama de recursos
-      -   `Inkscape`: Uma ferramenta de design vetorial de código aberto para criar e editar gráficos vetoriais
+- **Edição de Imagens:**
+  - `GIMP`: Um poderoso editor de imagens de código aberto com uma ampla gama de recursos
+  - `Inkscape`: Uma ferramenta de design vetorial de código aberto para criar e editar gráficos vetoriais
 
 ```bash
 sudo pacman -S gimp inkscape
 ```
 
-  -   **Edição de Código e Arquivos:**
-      -   `Vim`: Um editor de texto altamente configurável construído para eficiência
-      -   `Visual Studio Code`: Um editor de código-fonte desenvolvido pela Microsoft com suporte a várias linguagens e recursos de desenvolvimento
-      -   `Git`: Sistema de controle de versão distribuído, amplamente utilizado no desenvolvimento de software
+- **Edição de Código e Arquivos:**
+  - `Vim`: Um editor de texto altamente configurável construído para eficiência
+  - `Visual Studio Code`: Um editor de código-fonte desenvolvido pela Microsoft com suporte a várias linguagens e recursos de desenvolvimento
+  - `Git`: Sistema de controle de versão distribuído, amplamente utilizado no desenvolvimento de software
 
 ```bash
 sudo pacman -S vim git
 yay -S visual-studio-code-bin
 ```
 
-  -   **Visualização de Imagens:**
-      -   `Feh`: Um visualizador de imagem leve para exibir imagens em sistemas X11
-      -   `W3M`: Um navegador de texto para a linha de comando
+- **Visualização de Imagens:**
+  - `Feh`: Um visualizador de imagem leve para exibir imagens em sistemas X11
+  - `W3M`: Um navegador de texto para a linha de comando
 
 ```bash
 sudo pacman -S feh w3m
 ```
 
-  -   **Papel de Parede:**
-      -   `Nitrogen`: Um gerenciador de papéis de parede para definir e manter o plano de fundo da área de trabalho
+- **Papel de Parede:**
+  - `Nitrogen`: Um gerenciador de papéis de parede para definir e manter o plano de fundo da área de trabalho
 
 ```bash
 sudo pacman -S nitrogen
 ```  
 
-  -   **Lançador de Aplicativos:**
-      -   `Rofi`: Um seletor de aplicativos e lançador de janelas altamente personalizável
+- **Lançador de Aplicativos:**
+  - `Rofi`: Um seletor de aplicativos e lançador de janelas altamente personalizável
 
 ```bash
 sudo pacman -S rofi
 ```
 
-  -   **Captura de Tela:**
-      -   `Main`: Uma ferramenta de captura de tela rápida e eficiente
-      -   `Xclip`: Um utilitário para interagir com a área de transferência do X
-      -   `Xdotool`: Uma ferramenta para automatizar interações com janelas X
-      -   `Xcolor`: Um utilitário para capturar cores da tela com o mouse
+- **Captura de Tela:**
+  - `Main`: Uma ferramenta de captura de tela rápida e eficiente
+  - `Xclip`: Um utilitário para interagir com a área de transferência do X
+  - `Xdotool`: Uma ferramenta para automatizar interações com janelas X
+  - `Xcolor`: Um utilitário para capturar cores da tela com o mouse
 
 ```bash
 sudo pacman -S main xclip xdotool xcolor
 ```
 
-  -   **Controle de Brilho:**
-      -   `Brightnessctl`: Uma ferramenta para controlar o brilho da tela em sistemas que suportam o controle de brilho
+- **Controle de Brilho:**
+  - `Brightnessctl`: Uma ferramenta para controlar o brilho da tela em sistemas que suportam o controle de brilho
 
 ```bash
 sudo pacman -S brightnessctl
 ```
 
-  -   **Controle de Áudio:**
-      -   `Pactl`: Uma interface de linha de comando para controlar o PulseAudio, o sistema de som padrão do Linux. Ele já veio padrão, não precisei instalar
-      -   `Playerctl`: Um utilitário para controlar players de música via linha de comando
+- **Controle de Áudio:**
+  - `Pactl`: Uma interface de linha de comando para controlar o PulseAudio, o sistema de som padrão do Linux. Ele já veio padrão, não precisei instalar
+  - `Playerctl`: Um utilitário para controlar players de música via linha de comando
 
 ```bash
 sudo pacman -S playerctl
 ```
 
-  -   **Modo Noturno:**
-      -   `Redshift`: Um aplicativo que ajusta a temperatura da cor da tela de acordo com a hora do dia para reduzir a fadiga ocular
+- **Modo Noturno:**
+  - `Redshift`: Um aplicativo que ajusta a temperatura da cor da tela de acordo com a hora do dia para reduzir a fadiga ocular
 
 ```bash
 sudo pacman -S redshift
 ```
 
-  -   **Conectividade Bluetooth:**
-      -   `Bluetoothctl`, `Blueman`, `Bluez` e `Bluez-utils`: Conjunto de ferramentas para configurar e gerenciar dispositivos Bluetooth no Linux
+- **Conectividade Bluetooth:**
+  - `Bluetoothctl`, `Blueman`, `Bluez` e `Bluez-utils`: Conjunto de ferramentas para configurar e gerenciar dispositivos Bluetooth no Linux
 
 ```bash
 sudo pacman -S bluetoothctl blueman bluez bluez-utils
@@ -178,60 +178,61 @@ sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 ```
 
-  -   **Informações da Bateria:**
-      -   `Acpi`: Um utilitário para exibir informações sobre dispositivos ACPI, incluindo bateria
+- **Informações da Bateria:**
+  - `Acpi`: Um utilitário para exibir informações sobre dispositivos ACPI, incluindo bateria
 
 ```bash
 sudo pacman -S acpi
 ```
 
-  -   **Gerenciador de Arquivos:**
-      -   `Ranger`: Um gerenciador de arquivos baseado em texto para a linha de comando, com navegação estilo Vim
+- **Gerenciador de Arquivos:**
+  - `Ranger`: Um gerenciador de arquivos baseado em texto para a linha de comando, com navegação estilo Vim
 
 ```bash
 sudo pacman -S ranger
 ```
 
-  -   **Personalização do Ambiente:**
-      -   `Lxappearance`: Uma ferramenta para personalizar o tema GTK e o ícone do cursor do mouse
-      -   `Lxsession`: Um gerenciador de sessão leve que permite iniciar aplicativos de sessão como o `lxpolkit`, útil para gerenciar permissões de root gráficas
+- **Personalização do Ambiente:**
+  - `Lxappearance`: Uma ferramenta para personalizar o tema GTK e o ícone do cursor do mouse
+  - `Lxsession`: Um gerenciador de sessão leve que permite iniciar aplicativos de sessão como o `lxpolkit`, útil para gerenciar permissões de root gráficas
 
 ```bash
 sudo pacman -S lxappearance lxsession
 ```
 
-  -   **Bordas Arredondadas, Blur, etc.:**
-      -   `Picom`: Um compositor leve que fornece transparência, sombras e outras efeitos visuais para gerenciadores de janelas
+- **Bordas Arredondadas, Blur, etc.:**
+  - `Picom`: Um compositor leve que fornece transparência, sombras e outras efeitos visuais para gerenciadores de janelas
 
 ```bash
 sudo pacman -S picom
 ```
 
-  -   **Terminal:**
-      -   `Kitty`: Um emulador de terminal altamente configurável e performático
+- **Terminal:**
+  - `Kitty`: Um emulador de terminal altamente configurável e performático
 
 ```bash
 sudo pacman -S kitty
 ```
 
-  -   **Notificações:**
-      -   `Dunst`: Um leve e personalizável daemon de notificações para sistemas X11
+- **Notificações:**
+  - `Dunst`: Um leve e personalizável daemon de notificações para sistemas X11
 
 ```bash
 sudo pacman -S dunst
 ```
-  -   **Navegador Web:**
-      -   `Google Chrome` ou `Chromium`: Navegadores da Web desenvolvidos pelo Google, conhecidos por sua rapidez e suporte a tecnologias web modernas. Utilizo mais sites online, então me serve muito um navegador
+
+- **Navegador Web:**
+  - `Google Chrome` ou `Chromium`: Navegadores da Web desenvolvidos pelo Google, conhecidos por sua rapidez e suporte a tecnologias web modernas. Utilizo mais sites online, então me serve muito um navegador
 
 ```bash
 yay -S google-chrome
 sudo pacman -S chromium
 ```
 
-  - **Economia de Energia:**
-    -   `TLP`: Um utilitário para gerenciar a eficiência energia do sistema
-    -   `CpuPower`: Um utilitário para gerenciar a eficiência da CPU do sistema
-    -   `Powertop`: Ferramenta de diagnóstico e otimização do consumo de energia, útil para laptops
+- **Economia de Energia:**
+  - `TLP`: Um utilitário para gerenciar a eficiência energia do sistema
+  - `CpuPower`: Um utilitário para gerenciar a eficiência da CPU do sistema
+  - `Powertop`: Ferramenta de diagnóstico e otimização do consumo de energia, útil para laptops
 
 ```bash
 sudo pacman -S tlp cpupower powertop
@@ -244,31 +245,31 @@ sudo systemctl start cpupower
 sudo cpupower frequency-set -g powersave # Ajusta a frequência da CPU para o modo de economia de energia
 ```
 
-  -   **Barra de Status:**
-      -   `i3blocks`: Um gerenciador de status modular para a barra do i3wm, que permite exibir informações como volume, bateria, data, uso de CPU/RAM, entre outros, por meio de scripts personalizáveis
+- **Barra de Status:**
+  - `i3blocks`: Um gerenciador de status modular para a barra do i3wm, que permite exibir informações como volume, bateria, data, uso de CPU/RAM, entre outros, por meio de scripts personalizáveis
 
 ```bash
 sudo pacman -S i3blocks
 ```
 
-  - **Leitor de Código de Barras / QR Code:**
-      -   `Zbar`: Ferramenta de linha de comando para ler códigos de barras e QR codes a partir da câmera ou imagens
+- **Leitor de Código de Barras / QR Code:**
+  - `Zbar`: Ferramenta de linha de comando para ler códigos de barras e QR codes a partir da câmera ou imagens
 
 ```bash
 sudo pacman -S zbar
 ```
 
-  - **Terminal:**
-      -   `Neofetch`: Mostra informações do sistema de forma visual no terminal
-      -   `Cowsay`: Gera mensagens divertidas no terminal com figuras em ASCII
-      -   `jq`: Um processador de linha de comando leve e poderoso para manipular e analisar dados JSON
+- **Terminal:**
+  - `Neofetch`: Mostra informações do sistema de forma visual no terminal
+  - `Cowsay`: Gera mensagens divertidas no terminal com figuras em ASCII
+  - `jq`: Um processador de linha de comando leve e poderoso para manipular e analisar dados JSON
 
 ```bash
 sudo pacman -S neofetch cowsay jq
 ```
 
-  - **Downloads de Vídeos:**
-      -   `yt-dlp`: Um utilitário moderno de linha de comando para baixar vídeos e áudios de sites como YouTube
+- **Downloads de Vídeos:**
+  - `yt-dlp`: Um utilitário moderno de linha de comando para baixar vídeos e áudios de sites como YouTube
 
 ```bash
 sudo pacman -S yt-dlp
@@ -284,12 +285,68 @@ Caso você seja o autor desse papel de parede ou tenha informações sobre a lic
 
 ## Tema e ícones
 
--   **Tema: [Orchis](https://github.com/vinceliuice/Orchis-theme) (Variação de cor: Gray)**
-    -   O Orhis é um tema popular que apresenta uma aparência moderna e limpa em sistemas operacionais Linux. A variação de cor Gray do tema oferece uma paleta de cores suaves e elegantes, que combinam bem com a maioria das interfaces gráficas de usuário
--   **Ícones: [Papyrus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)**
-    -   Os ícones Papyrus são conhecidos por sua aparência nítida e detalhada, o que os torna ideais para uso em telas de alta resolução. Eles também têm uma grande variedade de ícones disponíveis, cobrindo muitas categorias diferentes de aplicativos e pastas
--   **Cursor: [Simp1e](https://gitlab.com/cursors/simp1e)**
-    -   Como descrito pelo criador "An aesthetic cursor theme for Linux desktops" ou para quem não fala árabe "Um elegante tema de cursor para ambientes de desktop Linux"
+- **Tema: [Orchis](https://github.com/vinceliuice/Orchis-theme) (Variação de cor: Gray)**
+  - O Orhis é um tema popular que apresenta uma aparência moderna e limpa em sistemas operacionais Linux. A variação de cor Gray do tema oferece uma paleta de cores suaves e elegantes, que combinam bem com a maioria das interfaces gráficas de usuário
+
+<details>
+<summary>Forçar todos os aplicativos GTK a usar o tema</summary>
+
+### Configurando o Tema no `~/.profile` (caso não use o `.profile`)
+
+Se você não usa o `.profile`, pode adicionar a variável de ambiente no `.xprofile`, que é carregado durante a inicialização da sessão gráfica:
+
+```bash
+vim ~/.xprofile
+```
+
+E adicione:
+
+```bash
+export GTK_THEME=Orchis-Grey-Dark
+```
+
+Depois, recarregue o arquivo com:
+
+```bash
+source ~/.xprofile
+```
+
+### Configurando o Tema no `~/.config/gtk-3.0/settings.ini`
+
+Para garantir que o tema seja aplicado no GTK 3.x, edite o arquivo de configurações:
+
+```ini
+vim ~/.config/gtk-3.0/settings.ini
+```
+
+E adicione ou modifique a linha:
+
+```ini
+[Settings]
+gtk-theme-name=Orchis-Grey-Dark
+```
+
+### Aplicativos GTK 4.x
+
+Da mesma forma que no GTK 3, edite o arquivo:
+
+```bash
+vim ~/.config/gtk-4.0/settings.ini
+```
+
+Adicione a linha:
+
+```ini
+[Settings]
+gtk-theme-name=Orchis-Grey-Dark
+```
+
+</details>
+
+- **Ícones: [Papyrus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)**
+  - Os ícones Papyrus são conhecidos por sua aparência nítida e detalhada, o que os torna ideais para uso em telas de alta resolução. Eles também têm uma grande variedade de ícones disponíveis, cobrindo muitas categorias diferentes de aplicativos e pastas
+- **Cursor: [Simp1e](https://gitlab.com/cursors/simp1e)**
+  - Como descrito pelo criador "An aesthetic cursor theme for Linux desktops" ou para quem não fala árabe "Um elegante tema de cursor para ambientes de desktop Linux"
 
 ## Contribuição
 

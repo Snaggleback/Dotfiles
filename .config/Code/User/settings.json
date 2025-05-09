@@ -72,5 +72,8 @@
     "editor.cursorStyle": "line",
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "never",
-    "window.controlsStyle": "custom"
+    "window.controlsStyle": "custom",
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    }
 }

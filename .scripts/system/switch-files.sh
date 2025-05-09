@@ -16,11 +16,11 @@ files=(
     "neofetch - $HOME/.config/neofetch/config.conf"
     "bash - $HOME/.bashrc"
     "vim - $HOME/.vimrc"
-    "readme.md README.md - $HOME/Documentos/GitHub/Dotfiles/README.md"
+    "README.md - $HOME/Documentos/GitHub/Dotfiles/README.md"
 )
 
 # Cria o menu, e pega o que o usuário escolheu
-choice=$(printf "%s\n" "${files[@]}" | rofi -dmenu)
+choice=$(printf "%s\n" "${files[@]}" | rofi -dmenu -i)
 
 # Verifica se foi escolhido algo e não teve interrupções
 if [ "${choice}" ]; then
