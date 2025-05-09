@@ -47,6 +47,29 @@ EndSection
 
 </details>
 
+## Configuração do Greeter LightDM
+
+Para configurar o Greeter LightDM GTK, eu faço o seguinte: Crio o arquivo ou edito `/etc/lightdm/lightdm-gtk-greeter.conf` com o seguinte conteúdo:
+
+<details> <summary>Conteúdo Greeter</summary>
+
+```txt
+[greeter]
+theme-name = Orchis-Grey-Dark
+font-name = Cantarell 10
+background = /usr/share/backgrounds/chainsaw-man-denji-transformed-black-and-white.jpg
+position = 12%,center -15%,center
+icon-theme-name = Papirus-Dark
+indicators = ~hostname;~spacer;~clock;~spacer;~power
+```
+
+```bash
+# Copiar o papéis de parede
+sudo cp -r ~/Imagens/Papéis de parede/ /usr/share/backgrounds/
+```
+
+</details>
+
 ## Sofware utilizados
 
 Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim. Eu tenho algumas fontes extras que não utilizo, mas caso eu quero mudar de fonte, já tem a opção, aqui as fontes que utilizo no meu sistema:
