@@ -194,11 +194,10 @@ sudo pacman -S ranger
 
   -   **Personalização do Ambiente:**
       -   `Lxappearance`: Uma ferramenta para personalizar o tema GTK e o ícone do cursor do mouse
-      -   `Lightdm-gtk-greeter-settings`: Um utilitário de configuração para o LightDM, um gerenciador de exibição
       -   `Lxsession`: Um gerenciador de sessão leve que permite iniciar aplicativos de sessão como o `lxpolkit`, útil para gerenciar permissões de root gráficas
 
 ```bash
-sudo pacman -S lxappearance lightdm-gtk-greeter-settings lxsession
+sudo pacman -S lxappearance lxsession
 ```
 
   -   **Bordas Arredondadas, Blur, etc.:**

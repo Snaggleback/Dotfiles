@@ -22,7 +22,6 @@
     "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.editor.editorActionsLocation": "hidden",
-    "window.customTitleBarVisibility": "auto",
     "window.commandCenter": false,
     "window.restoreWindows": "none",
     // Configurações de extensões e ferramentas
@@ -72,5 +71,6 @@
     "window.titleBarStyle": "native",
     "editor.cursorStyle": "line",
     "security.workspace.trust.untrustedFiles": "open",
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "window.controlsStyle": "custom"
 }
