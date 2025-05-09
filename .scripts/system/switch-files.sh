@@ -16,6 +16,7 @@ files=(
     "neofetch - $HOME/.config/neofetch/config.conf"
     "bash - $HOME/.bashrc"
     "vim - $HOME/.vimrc"
+    "readme.md README.md - $HOME/Documentos/GitHub/Dotfiles/README.md"
 )
 
 # Cria o menu, e pega o que o usuário escolheu

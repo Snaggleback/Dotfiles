@@ -169,7 +169,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
-mode "redimensionar" {
+mode "" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -193,7 +193,7 @@ mode "redimensionar" {
         bindsym $mod+r mode "default" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh off"
 }
 
-bindsym $mod+r mode "redimensionar" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh on"
+bindsym $mod+r mode "" exec --no-startup-id "$HOME/.scripts/info/resize-mode-info.sh on"
 
 # Alternar a visibilidade da barra de status
 bindsym $mod+b bar mode toggle

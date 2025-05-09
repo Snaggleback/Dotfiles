@@ -54,7 +54,8 @@ Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim.
 <details> <summary>Fontes que utilizo no meu sistema</summary>
 
     ```text
-    pacman -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-noto-nerd
+    pacman -S ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono ttf-noto-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+    fc-cache -f
     ```
 
 </details>
@@ -62,64 +63,194 @@ Irei colocar os programas abaixo que eu instalo para deixar o meu sistema assim.
 Fora essas fontes, eu tenho mais uns pingados de sofwares que dá de se resumir em uma lista, se eu esquecer de alguma coisa é só avisar!
 
 <details> <summary>Listagem de programas utilizados</summary>
-  
+
+  -   **AUR:**
+      -   `Yay`: Um gerenciador de pacotes AUR (Arch User Repository) para facilitar a instalação de software não oficial no Arch Linux
+
+```bash
+cd /temp
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
   -   **Edição de Imagens:**
       -   `GIMP`: Um poderoso editor de imagens de código aberto com uma ampla gama de recursos
       -   `Inkscape`: Uma ferramenta de design vetorial de código aberto para criar e editar gráficos vetoriais
+
+```bash
+sudo pacman -S gimp inkscape
+```
+
   -   **Edição de Código e Arquivos:**
       -   `Vim`: Um editor de texto altamente configurável construído para eficiência
       -   `Visual Studio Code`: Um editor de código-fonte desenvolvido pela Microsoft com suporte a várias linguagens e recursos de desenvolvimento
+      -   `Git`: Sistema de controle de versão distribuído, amplamente utilizado no desenvolvimento de software
+
+```bash
+sudo pacman -S vim git
+yay -S visual-studio-code-bin
+```
+
   -   **Visualização de Imagens:**
       -   `Feh`: Um visualizador de imagem leve para exibir imagens em sistemas X11
       -   `W3M`: Um navegador de texto para a linha de comando
+
+```bash
+sudo pacman -S feh w3m
+```
+
   -   **Papel de Parede:**
       -   `Nitrogen`: Um gerenciador de papéis de parede para definir e manter o plano de fundo da área de trabalho
+
+```bash
+sudo pacman -S nitrogen
+```  
+
   -   **Lançador de Aplicativos:**
       -   `Rofi`: Um seletor de aplicativos e lançador de janelas altamente personalizável
+
+```bash
+sudo pacman -S rofi
+```
+
   -   **Captura de Tela:**
       -   `Main`: Uma ferramenta de captura de tela rápida e eficiente
       -   `Xclip`: Um utilitário para interagir com a área de transferência do X
       -   `Xdotool`: Uma ferramenta para automatizar interações com janelas X
       -   `Xcolor`: Um utilitário para capturar cores da tela com o mouse
+
+```bash
+sudo pacman -S main xclip xdotool xcolor
+```
+
   -   **Controle de Brilho:**
       -   `Brightnessctl`: Uma ferramenta para controlar o brilho da tela em sistemas que suportam o controle de brilho
+
+```bash
+sudo pacman -S brightnessctl
+```
+
   -   **Controle de Áudio:**
       -   `Pactl`: Uma interface de linha de comando para controlar o PulseAudio, o sistema de som padrão do Linux. Ele já veio padrão, não precisei instalar
       -   `Playerctl`: Um utilitário para controlar players de música via linha de comando
+
+```bash
+sudo pacman -S playerctl
+```
+
   -   **Modo Noturno:**
       -   `Redshift`: Um aplicativo que ajusta a temperatura da cor da tela de acordo com a hora do dia para reduzir a fadiga ocular
+
+```bash
+sudo pacman -S redshift
+```
+
   -   **Conectividade Bluetooth:**
       -   `Bluetoothctl`, `Blueman`, `Bluez` e `Bluez-utils`: Conjunto de ferramentas para configurar e gerenciar dispositivos Bluetooth no Linux
+
+```bash
+sudo pacman -S bluetoothctl blueman bluez bluez-utils
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+```
+
   -   **Informações da Bateria:**
       -   `Acpi`: Um utilitário para exibir informações sobre dispositivos ACPI, incluindo bateria
+
+```bash
+sudo pacman -S acpi
+```
+
   -   **Gerenciador de Arquivos:**
       -   `Ranger`: Um gerenciador de arquivos baseado em texto para a linha de comando, com navegação estilo Vim
+
+```bash
+sudo pacman -S ranger
+```
+
   -   **Personalização do Ambiente:**
       -   `Lxappearance`: Uma ferramenta para personalizar o tema GTK e o ícone do cursor do mouse
       -   `Lightdm-gtk-greeter-settings`: Um utilitário de configuração para o LightDM, um gerenciador de exibição
+      -   `Lxsession`: Um gerenciador de sessão leve que permite iniciar aplicativos de sessão como o `lxpolkit`, útil para gerenciar permissões de root gráficas
+
+```bash
+sudo pacman -S lxappearance lightdm-gtk-greeter-settings lxsession
+```
+
   -   **Bordas Arredondadas, Blur, etc.:**
       -   `Picom`: Um compositor leve que fornece transparência, sombras e outras efeitos visuais para gerenciadores de janelas
+
+```bash
+sudo pacman -S picom
+```
+
   -   **Terminal:**
       -   `Kitty`: Um emulador de terminal altamente configurável e performático
+
+```bash
+sudo pacman -S kitty
+```
+
   -   **Notificações:**
       -   `Dunst`: Um leve e personalizável daemon de notificações para sistemas X11
-  -   **AUR:**
-      -   `Yay`: Um gerenciador de pacotes AUR (Arch User Repository) para facilitar a instalação de software não oficial no Arch Linux
+
+```bash
+sudo pacman -S dunst
+```
   -   **Navegador Web:**
       -   `Google Chrome` ou `Chromium`: Navegadores da Web desenvolvidos pelo Google, conhecidos por sua rapidez e suporte a tecnologias web modernas. Utilizo mais sites online, então me serve muito um navegador
+
+```bash
+yay -S google-chrome
+sudo pacman -S chromium
+```
+
   - **Economia de Energia:**
     -   `TLP`: Um utilitário para gerenciar a eficiência energia do sistema
     -   `CpuPower`: Um utilitário para gerenciar a eficiência da CPU do sistema
+    -   `Powertop`: Ferramenta de diagnóstico e otimização do consumo de energia, útil para laptops
+
+```bash
+sudo pacman -S tlp cpupower powertop
+# Ativa e inicia o TLP
+sudo systemctl enable tlp
+sudo systemctl start tlp
+# Ativa e inicia o CPU Power
+sudo systemctl enable cpupower
+sudo systemctl start cpupower
+sudo cpupower frequency-set -g powersave # Ajusta a frequência da CPU para o modo de economia de energia
+```
+
   -   **Barra de Status:**
       -   `i3blocks`: Um gerenciador de status modular para a barra do i3wm, que permite exibir informações como volume, bateria, data, uso de CPU/RAM, entre outros, por meio de scripts personalizáveis
+
+```bash
+sudo pacman -S i3blocks
+```
+
   - **Leitor de Código de Barras / QR Code:**
       -   `Zbar`: Ferramenta de linha de comando para ler códigos de barras e QR codes a partir da câmera ou imagens
+
+```bash
+sudo pacman -S zbar
+```
+
   - **Terminal:**
       -   `Neofetch`: Mostra informações do sistema de forma visual no terminal
       -   `Cowsay`: Gera mensagens divertidas no terminal com figuras em ASCII
       -   `jq`: Um processador de linha de comando leve e poderoso para manipular e analisar dados JSON
+
+```bash
+sudo pacman -S neofetch cowsay jq
+```
+
   - **Downloads de Vídeos:**
       -   `yt-dlp`: Um utilitário moderno de linha de comando para baixar vídeos e áudios de sites como YouTube
+
+```bash
+sudo pacman -S yt-dlp
+```
 
 </details>
 
