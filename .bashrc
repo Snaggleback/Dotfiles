@@ -32,22 +32,6 @@ alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/r
 # Atalho para executar o script 'dots.sh'
 alias dot='$HOME/Documentos/GitHub/Simple-Git-Manager/dot.sh'
 
-alias copyfile='xclip -sel clip <'
-
-# Função para descompactar arquivos .zip
-unzipdir() {
-    local dir_name
-    # Se o primeiro argumento for vazio, exibe o uso e retorna 1
-    if [ -z "$1" ]; then
-        echo "Modo de uso: unzipdir <file.zip>"
-        return 1
-    fi
-    # Cria o nome do diretório e descompacta o arquivo
-    dir_name=$(basename "$1" .zip)
-    # Cria o diretório e descompacta o arquivo
-    unzip "$1" -d "$dir_name"
-}
-
 PS1='[\u@\h \W]\$ '
 
 videodl() {
