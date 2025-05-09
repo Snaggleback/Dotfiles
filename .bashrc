@@ -32,6 +32,8 @@ alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/r
 # Atalho para executar o script 'dots.sh'
 alias dot='$HOME/Documentos/GitHub/Simple-Git-Manager/dot.sh'
 
+alias copyfile='xclip -sel clip <'
+
 # Função para descompactar arquivos .zip
 unzipdir() {
     local dir_name
