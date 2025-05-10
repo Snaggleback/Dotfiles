@@ -285,7 +285,7 @@ Caso você seja o autor desse papel de parede ou tenha informações sobre a lic
 
 ## Tema e ícones
 
-- **Tema: [Orchis](https://github.com/vinceliuice/Orchis-theme) (Variação de cor: Gray)**
+- **Tema: [Orchis](https://github.com/vinceliuice/Orchis-theme) (Variação de cor: Gray/Cinza)**
   - O Orhis é um tema popular que apresenta uma aparência moderna e limpa em sistemas operacionais Linux. A variação de cor Gray do tema oferece uma paleta de cores suaves e elegantes, que combinam bem com a maioria das interfaces gráficas de usuário
 
 <details>
