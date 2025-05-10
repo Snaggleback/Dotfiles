@@ -3,20 +3,14 @@ set $mod Mod4
 # Definindo a fonte padrão para o i3
 font pango: Cantarell 11
 
-# Restaundo o wallpaper atual no i3
-exec --no-startup-id nitrogen --restore
+# Definindo o tema padrão para o i3
+exec_always --no-startup-id feh --bg-scale "$HOME/Imagens/Papéis de parede/chainsaw-man-on-top-of-dead-demons.png"
 
 # Executando o picom, com o arquivo de configuração padrão
 exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
 # Usando um script para controlar o modo noturno, verificando se o sistema está no modo noturno
 exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh verify"
-
-# Gnome keyring, necessário para autenticar no sistema
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
-
-# Lxpolkit, utilizado para autenticar como usuário root no sistema
-exec --no-startup-id /usr/bin/lxpolkit
 
 # Montar automaticamente ao inserir o pendrive
 exec --no-startup-id udiskie --no-notify --automount

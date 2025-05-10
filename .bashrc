@@ -4,6 +4,8 @@
 # Se não estiver executando interativamente, não faz nada
 [[ $- != *i* ]] && return
 
+TERM=xterm-256color
+
 # Executando o script de frases aleatórias
 cowsay "$("$HOME/.scripts/info/random-phrases.sh")"
 

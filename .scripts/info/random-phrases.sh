@@ -80,6 +80,6 @@ phrases=(
 )
 
 # Gera um número aleatório de acordo com o tamanho do array
-random_index=$((RANDOM % "${#phrases[@]}" + 1))
+random_index=$((RANDOM % ${#phrases[@]}))
 
 echo "${phrases[$random_index]}"
