@@ -49,3 +49,20 @@ audiodl() {
         --metadata-from-title "%(artist)s - %(title)s" \
         -o '%(title)s.%(ext)s' "$1"
 }
+
+unzipdir() {
+    if [ -z "$1" ]; then
+        echo "Uso: unzipdir arquivo.zip"
+        return 1
+    fi
+
+    for arquivo in "$@"; do
+        if [[ "$arquivo" == *.zip && -f "$arquivo" ]]; then
+            pasta="${arquivo%.zip}"
+            mkdir -p "$pasta" && unzip -q "$arquivo" -d "$pasta"
+            echo "Extraído para: $pasta/"
+        else
+            echo "Ignorado: $arquivo (não é .zip ou não existe)"
+        fi
+    done
+}

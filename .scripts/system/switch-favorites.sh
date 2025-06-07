@@ -16,6 +16,7 @@ favorites=(
     "YouTube (Assistir mais tarde)"      "${BROWSER} https://www.youtube.com/playlist?list=WL"
     "YouTube Music"                      "${BROWSER} https://music.youtube.com/"
     "Netflix"                            "${BROWSER} https://www.netflix.com/browse"
+    "Crunchyroll"                        "${BROWSER} https://www.crunchyroll.com/"
     "WhatsApp"                           "${BROWSER} https://web.whatsapp.com/"
     "GitHub (@Snaggleback)"              "${BROWSER} https://github.com/Snaggleback/"
     "ChatGPT"                            "${BROWSER} https://chat.openai.com/"
