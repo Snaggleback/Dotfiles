@@ -5,35 +5,44 @@ BROWSER="google-chrome-stable --new-tab"
 
 # Lista de favoritos: Nome seguido do comando correspondente
 favorites=(
-    "Amazon.com.br"                      "${BROWSER} https://www.amazon.com.br/"
-    "Drive"                              "${BROWSER} https://drive.google.com/drive/"
-    "Gmail"                              "${BROWSER} https://mail.google.com/"
-    "Outlook"                            "${BROWSER} https://outlook.live.com/mail/0/"
-    "Documentos"                         "${BROWSER} https://docs.google.com/document/u/0/?hl=pt-BR"
-    "Planilhas"                          "${BROWSER} https://docs.google.com/spreadsheets/u/0/"
+    # Compras
+    "Amazon"                             "${BROWSER} https://www.amazon.com.br/"
+
+    # Entretenimento
+    "Chess.com (Xadrez online)"          "${BROWSER} https://www.chess.com/home"
+    "Crunchyroll"                        "${BROWSER} https://www.crunchyroll.com/"
+    "Netflix"                            "${BROWSER} https://www.netflix.com/browse"
+    "YouTube"                            "${BROWSER} https://www.youtube.com/"
+    "YouTube Music"                      "${BROWSER} https://music.youtube.com/"
+
+    # Redes sociais e comunicação
+    "Instagram"                          "${BROWSER} https://www.instagram.com/"
+    "LinkedIn"                           "${BROWSER} https://www.linkedin.com/"
     "Mensagens"                          "${BROWSER} https://messages.google.com/web/u/0/conversations"
     "Reddit"                             "${BROWSER} https://www.reddit.com/"
-    "YouTube"                            "${BROWSER} https://www.youtube.com/"
-    "YouTube (Assistir mais tarde)"      "${BROWSER} https://www.youtube.com/playlist?list=WL"
-    "YouTube Music"                      "${BROWSER} https://music.youtube.com/"
-    "Netflix"                            "${BROWSER} https://www.netflix.com/browse"
-    "Crunchyroll"                        "${BROWSER} https://www.crunchyroll.com/"
     "WhatsApp"                           "${BROWSER} https://web.whatsapp.com/"
-    "GitHub (@Snaggleback)"              "${BROWSER} https://github.com/Snaggleback/"
-    "ChatGPT"                            "${BROWSER} https://chat.openai.com/"
-    "CodeSandBox"                        "${BROWSER} https://codesandbox.io/dashboard/recent"
-    "Gemini"                             "${BROWSER} https://gemini.google.com/app"
-    "Microsoft Copilot"                  "${BROWSER} https://copilot.microsoft.com/"
-    "LinkedIn"                           "${BROWSER} https://www.linkedin.com/"
+
+    # Serviços de produtividade
     "Canva"                              "${BROWSER} https://www.canva.com/"
     "Notion"                             "${BROWSER} https://www.notion.so/"
-    "Instagram"                          "${BROWSER} https://www.instagram.com/"
-    "Chess.com (Xadrez online)"          "${BROWSER} https://www.chess.com/home"
-    "Duolingo"                           "${BROWSER} https://www.duolingo.com/learn"
-    "Pinterest"                          "${BROWSER} https://br.pinterest.com/"
-    "TikTok"                             "${BROWSER} https://www.tiktok.com/messages?lang=pt-BR"
+
+    # Serviços do Google
+    "Documentos"                         "${BROWSER} https://docs.google.com/document/u/0/"
+    "Planilhas"                          "${BROWSER} https://docs.google.com/spreadsheets/u/0/"
+    "Drive"                              "${BROWSER} https://drive.google.com/drive/"
+    "Gmail"                              "${BROWSER} https://mail.google.com/"
+
+    # Serviços da Microsoft
+    "Outlook"                            "${BROWSER} https://outlook.live.com/mail/0/"
+
+    # Desenvolvimento e IA
+    "ChatGPT"                            "${BROWSER} https://chat.openai.com/"
+    "GitHub"                             "${BROWSER} https://github.com/Snaggleback/"
+
+    # Utilitários locais
     "Arquivos de Configuração"           "kitty -e \"$HOME/Documentos/GitHub/Simple-Git-Manager/dot.sh\""
 )
+
 
 # Separando nomes e comandos
 declare -a favorites_name=()
