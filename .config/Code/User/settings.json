@@ -78,5 +78,20 @@
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    },
+    "tailwind-fold.supportedLanguages": [
+        "html",
+        "typescriptreact",
+        "javascriptreact",
+        "typescript",
+        "javascript",
+        "vue-html",
+        "vue",
+        "php",
+        "markdown",
+        "coffeescript",
+        "svelte",
+        "astro",
+        "erb"
+    ]
 }
