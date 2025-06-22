@@ -97,6 +97,64 @@ cd yay
 makepkg -si
 ```
 
+- **Utilitários de Sistema e Monitoramento**
+  - **htop**: Monitor de processos interativo e colorido para terminal  
+  - **dmenu**: Menu dinâmico minimalista, ótimo para scripts e atalhos de teclado
+  - **lsof**: Lista arquivos abertos e portas em uso — útil para depuração
+  - **iw / iwd**: Ferramentas de linha de comando para gerenciar Wi-Fi (iwd dá suporte a redes sem NetworkManager)
+
+```bash
+sudo pacman -S htop dmenu lsof iw iwd
+```
+
+- **Gerenciamento de Disco, Partições e Mídia Removível**
+  - **GParted**: Interface gráfica para criar, redimensionar e verificar partições
+  - **Udiskie**: Auto-montagem de pendrives/HDs via udisks2, com ícone na systray
+
+```bash
+sudo pacman -S gparted udiskie udisks2
+```
+
+- **Arquivos & Compressão**
+  - **unzip / unrar / tar**: Ferramentas clássicas para extrair ZIP, RAR e TAR
+  - **p7zip** (opcional): Suporte a 7z caso você precise
+
+```bash
+sudo pacman -S unzip unrar tar
+sudo pacman -S p7zip   # se quiser
+```
+
+- **Downloads e Sincronização**
+  - **wget**: Downloader robusto para HTTP/HTTPS/FTP
+  - **rclone**: Sincronização/backup em nuvens (Google Drive, OneDrive, S3, etc.)
+
+```bash
+sudo pacman -S wget rclone
+```
+
+- **Multimídia**
+  - **FFmpeg**: Conversão/gravação de áudio + vídeo — backend de mil scripts
+  - **ImageMagick**: Manipulação de imagens (converter, redimensionar, otimizar)
+  - **scrcpy**: Espelha a tela de dispositivos Android via USB/Wi-Fi
+
+```bash
+sudo pacman -S ffmpeg imagemagick scrcpy
+```
+
+- **Comunicação**
+  - **Telegram Desktop**: Cliente oficial de desktop para o Telegram
+
+```bash
+sudo pacman -S telegram-desktop
+```
+
+- **Segurança e Bloqueio de Tela**
+  - **xss-lock**: Trabalha com i3-lock para bloquear após X minutos de ociosidade
+
+```bash
+sudo pacman -S xss-lock i3lock
+```
+
 - **Edição de Imagens:**
   - `GIMP`: Um poderoso editor de imagens de código aberto com uma ampla gama de recursos
   - `Inkscape`: Uma ferramenta de design vetorial de código aberto para criar e editar gráficos vetoriais
@@ -274,6 +332,8 @@ sudo pacman -S neofetch cowsay jq
 ```bash
 sudo pacman -S yt-dlp
 ```
+
+> ⚠️ *Se instalar algo pelo **AUR**, lembre-se de usar o `yay` (ou outro helper) como nos exemplos anteriores.*
 
 </details>
 
