@@ -38,7 +38,7 @@ favorites=(
     "GitHub"                             "${BROWSER} https://github.com/Snaggleback/"
 
     # Utilitários locais
-    "Arquivos de Configuração"           "kitty -e \"$HOME/Documentos/GitHub/Simple-Git-Manager/dot.sh\""
+    "Arquivos de Configuração"           "kitty -e \"$HOME/Documentos/GitHub/simple-git-manager/dot.sh\""
 )
 
 

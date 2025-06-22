@@ -32,7 +32,7 @@ alias compose='docker-compose' # Atalho para docker-compose
 alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/random-phrases.sh"))"'
 
 # Atalho para executar o script 'dots.sh'
-alias dot='$HOME/Documentos/GitHub/Simple-Git-Manager/dot.sh'
+alias dot='$HOME/Documentos/GitHub/simple-git-manager/dot.sh'
 
 PS1='[\u@\h \W]\$ '
 
