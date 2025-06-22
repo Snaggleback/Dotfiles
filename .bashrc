@@ -34,8 +34,6 @@ alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/r
 # Atalho para executar o script 'dots.sh'
 alias dot='$HOME/Documentos/GitHub/Simple-Git-Manager/dot.sh'
 
-
-
 PS1='[\u@\h \W]\$ '
 
 videodl() {
