@@ -27,8 +27,6 @@ favorites=(
     "Notion"                             "${BROWSER} https://www.notion.so/"
 
     # Serviços do Google
-    "Documentos"                         "${BROWSER} https://docs.google.com/document/u/0/"
-    "Planilhas"                          "${BROWSER} https://docs.google.com/spreadsheets/u/0/"
     "Drive"                              "${BROWSER} https://drive.google.com/drive/"
     "Gmail"                              "${BROWSER} https://mail.google.com/"
 
