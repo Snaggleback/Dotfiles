@@ -41,7 +41,6 @@ favorites=(
     "Arquivos de Configuração"           "kitty -e \"$HOME/Documentos/GitHub/simple-git-manager/dot.sh\""
 )
 
-
 # Separando nomes e comandos
 declare -a favorites_name=()
 declare -a favorites_exec=()

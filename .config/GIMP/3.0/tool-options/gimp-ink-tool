@@ -1,0 +1,11 @@
+# GIMP gimp-ink-tool options
+
+(foreground
+    (color "R'G'B'A double" 32 "\0\0\0\0\0\0\0\0\0\0\0\0yx\350\77\0\0\0\340\302\270\350\77\0\0\0\0\0\0\360\77" 0))
+(background
+    (color "R'G'B'A double" 32 "\0\0\0\40\30\30\230\77\0\0\0\340\207\24\264\77\0\0\0\200E\21\301\77\0\0\0\0\0\0\360\77" 0))
+(pattern "Pine")
+(brush-size 51)
+(brush-hardness 0.5)
+
+# end of gimp-ink-tool options

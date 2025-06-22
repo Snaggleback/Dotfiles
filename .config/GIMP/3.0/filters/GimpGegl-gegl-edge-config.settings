@@ -1,0 +1,9 @@
+# settings
+
+(GimpGegl-gegl-edge-config "2025-06-15 13:41:03"
+    (time 1750005663)
+    (algorithm differential)
+    (amount 1)
+    (border-behavior clamp))
+
+# end of settings

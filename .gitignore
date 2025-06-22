@@ -1,0 +1,7 @@
+# Arquivos temporários e irrelevantes
+pluginrc
+tmp/
+recently-used.xbel
+recently-used.xbel.bak
+thumbs/
+__pycache__/
