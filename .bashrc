@@ -1,6 +1,8 @@
 #!/bin/bash
 # ~/.bashrc
 
+export PATH="$HOME/.bin:$PATH"
+
 # Se não estiver executando interativamente, não faz nada
 [[ $- != *i* ]] && return
 
