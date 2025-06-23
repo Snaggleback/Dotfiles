@@ -2,6 +2,7 @@
 # ~/.bashrc
 
 export PATH="$HOME/.bin:$PATH"
+export CM_LAUNCHER=rofi clipmenu
 
 # Se não estiver executando interativamente, não faz nada
 [[ $- != *i* ]] && return

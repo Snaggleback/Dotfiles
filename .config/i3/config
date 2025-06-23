@@ -9,11 +9,16 @@ exec_always --no-startup-id feh --bg-scale "$HOME/Imagens/Papéis de parede/chai
 # Executando o picom, com o arquivo de configuração padrão
 exec --no-startup-id picom --config "$HOME/.config/picom/picom.conf"
 
+# Executando o clipmenud: gerenciador de clipboard
+exec --no-startup-id clipmenud
+
 # Usando um script para controlar o modo noturno, verificando se o sistema está no modo noturno
 exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh verify"
 
 # Montar automaticamente ao inserir o pendrive
 exec --no-startup-id udiskie --no-notify --automount
+
+bindsym $mod+v exec --no-startup-id clipmenu
 
 # Atalho para abrir o google chrome
 bindsym $mod+n exec --no-startup-id google-chrome-stable
