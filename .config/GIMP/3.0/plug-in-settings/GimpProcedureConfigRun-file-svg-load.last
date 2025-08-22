@@ -1,7 +1,7 @@
 # settings
 
-(width 500)
-(height 500)
+(width 861)
+(height 1000)
 (keep-ratio yes)
 (prefer-native-dimensions yes)
 (paths "no-import")

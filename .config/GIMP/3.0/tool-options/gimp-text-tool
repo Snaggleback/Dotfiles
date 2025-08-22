@@ -1,7 +1,7 @@
 # GIMP gimp-text-tool options
 
 (foreground
-    (color "R'G'B'A double" 32 "\0\0\0\0\0\0\0\0\0\0\0\0yx\350\77\0\0\0\340\302\270\350\77\0\0\0\0\0\0\360\77" 0))
+    (color "R'G'B'A double" 32 "\0\0\0\0\0\0\0\0\0\0\0\0\133R\342\77\0\0\0\200\311\237\317\77\0\0\0\0\0\0\360\77" 0))
 (palette "Histórico de cores")
 (font "Sans-serif")
 

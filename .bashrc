@@ -3,6 +3,8 @@
 
 export PATH="$HOME/.bin:$PATH"
 export CM_LAUNCHER=rofi clipmenu
+export EDITOR=vim
+export VISUAL=vim
 
 # Se não estiver executando interativamente, não faz nada
 [[ $- != *i* ]] && return
@@ -36,6 +38,9 @@ alias neofetch='neofetch --ascii "$(cowsay -f tux -W 20 $("$HOME/.scripts/info/r
 
 # Atalho para executar o script 'dots.sh'
 alias dot='$HOME/Documentos/GitHub/simple-git-manager/dot.sh'
+
+# Atalhos para o rclone
+alias updatedrive='rclone sync ~/Documentos mydrive:/Documentos'
 
 PS1='[\u@\h \W]\$ '
 

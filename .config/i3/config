@@ -1,5 +1,4 @@
 set $mod Mod4
-
 # Definindo a fonte padrão para o i3
 font pango: Cantarell 11
 
@@ -18,6 +17,7 @@ exec --no-startup-id "$HOME/.scripts/system/nightmode-controller.sh verify"
 # Montar automaticamente ao inserir o pendrive
 exec --no-startup-id udiskie --no-notify --automount
 
+# Atalho para abrir o clipmenu
 bindsym $mod+v exec --no-startup-id clipmenu
 
 # Atalho para abrir o google chrome
@@ -83,14 +83,8 @@ bindsym $mod+Shift+f exec --no-startup-id "$HOME/.scripts/system/switch-files.sh
 # Atalho para abrir o script (menu) de troca de favoritos
 bindsym $mod+Shift+s exec --no-startup-id "$HOME/.scripts/system/switch-favorites.sh"
 
-# Script personalizado para mostrar informações sobre o bluetooth
-bindsym $mod+Mod1+b exec --no-startup-id "$HOME/.scripts/info/show-bluetooth.sh"
-# Script personalizado para mostrar informações sobre o wifi
-bindsym $mod+Mod1+w exec --no-startup-id "$HOME/.scripts/info/show-wifi.sh"
-# Script personalizado para mostrar informações sobre a data
-bindsym $mod+Mod1+d exec --no-startup-id "$HOME/.scripts/info/show-date.sh"
-# Script personalizado para mostrar informações sobre a bateria
-bindsym $mod+Mod1+p exec --no-startup-id "$HOME/.scripts/info/show-battery.sh"
+# Atalho para ativar o bluetooth e desativar
+bindsym $mod+Shift+b exec --no-startup-id "$HOME/.scripts/system/toggle-bluetooth.sh"
 
 # Atalho para limpar as notificações do dunst
 bindsym $mod+Delete exec --no-startup-id dunstctl close-all

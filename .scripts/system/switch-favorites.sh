@@ -33,12 +33,16 @@ favorites=(
     # Serviços da Microsoft
     "Outlook"                            "${BROWSER} https://outlook.live.com/mail/0/"
 
+    # Outros serviços
+    "Zoho Mail"                            "${BROWSER} https://mail.zoho.com/zm/#mail/folder/inbox"
+    "Zoho Mail (Administrador)"            "${BROWSER} https://mailadmin.zoho.com/cpanel/home.do"
+
     # Desenvolvimento e IA
     "ChatGPT"                            "${BROWSER} https://chat.openai.com/"
     "GitHub"                             "${BROWSER} https://github.com/Snaggleback/"
 
     # Utilitários locais
-    "Arquivos de Configuração"           "kitty -e \"$HOME/Documentos/GitHub/simple-git-manager/dot.sh\""
+    "Arquivos de Configuração"           "kitty -e \"$HOME/Área de trabalho/GitHub/simple-git-manager/dot.sh\""
 )
 
 # Separando nomes e comandos

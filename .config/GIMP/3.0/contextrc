@@ -1,11 +1,11 @@
 # GIMP user context
 
-(tool "gimp-move-tool")
+(tool "gimp-text-tool")
 (paint-info "gimp-paintbrush")
 (foreground
-    (color "R'G'B'A double" 32 "\0\0\0\0\0\0\0\0\0\0\0\0yx\350\77\0\0\0\340\302\270\350\77\0\0\0\0\0\0\360\77" 0))
+    (color "R'G'B'A double" 32 "\0\0\0\0\0\0\0\0\0\0\0\340ZR\342\77\0\0\0\300\307\237\317\77\0\0\0\0\0\0\360\77" 0))
 (background
-    (color "R'G'B'A double" 32 "\0\0\0\40\30\30\230\77\0\0\0\40\205\24\264\77\0\0\0\100D\21\301\77\0\0\0\0\0\0\360\77" 0))
+    (color "HSVA float" 16 "\0\0\0\0\0\0\0\0\0\0\200\77\0\0\200\77" 0))
 (brush "2. Hardness 100")
 (dynamics "Pressure Size")
 (mybrush "100% Opaque")

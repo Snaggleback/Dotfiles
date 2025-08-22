@@ -1,6 +1,6 @@
 # GIMP gimp-perspective-tool options
 
 (background
-    (color "R'G'B'A double" 32 "\0\0\0\40\30\30\230\77\0\0\0\340\207\24\264\77\0\0\0\200E\21\301\77\0\0\0\0\0\0\360\77" 0))
+    (color "HSVA float" 16 "\0\0\0\0\0\0\0\0\0\0\200\77\0\0\200\77" 0))
 
 # end of gimp-perspective-tool options
